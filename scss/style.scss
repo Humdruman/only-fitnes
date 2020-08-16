@@ -1,0 +1,36 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "utilites";
+
+@import "header";
+@import "start-test";
+@import "advantages";
+@import "reviews";
+@import "how-it-works";
+@import "begin";
+@import "footer";
+
+// Components
+@import "component_google-container";
+@import "component_workout";
+@import "component_reviews-photo-slider";
+@import "component_reviews-review-container";
+@import "component_pricing";
+@import "component_contact-form";
+
+// Media
+@import "media-query";
+
+// Component Media
+@import "component_google-container_media";
+@import "component_workout_media";
+@import "component_reviews-photo-slider_media";
+@import "component_reviews-review-container_media";
+@import "component_pricing_media";
+@import "component_contact-form_media";

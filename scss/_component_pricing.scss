@@ -1,0 +1,35 @@
+.pricing {
+
+
+  &-cards {}
+
+  &-card {
+
+
+    h2 {
+
+
+      .star {}
+    }
+
+    &-info {
+
+
+      &-img {}
+
+      &-text {}
+    }
+
+    &-price {
+
+
+      &-value {
+
+
+        &.disabled {
+
+        }
+      }
+    }
+  }
+}

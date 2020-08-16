@@ -1,0 +1,41 @@
+.section {
+  width: 100%;
+}
+
+%section-flex {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+
+  padding: 0 15px;
+  margin: 0 15px;
+}
+
+.section-flex-row {
+  @extend %section-flex;
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.section-flex-col {
+  @extend %section-flex;
+
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.fl-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.fl-col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.site-logo {
+
+}
+
