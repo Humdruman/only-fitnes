@@ -1,19 +1,57 @@
 .google-container {
-
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 48px;
+  align-items: center;
+  background-image: url(../images/google-app/background.png);
+  width: 266px;
+  height: 474px;
 
   h2 {
+    font-size: $font-size-24;
+    font-family: $berlingske-serif-lt;
+    color: $color-phone;
 
+    margin-bottom: 20px;
   }
 
-  .google-play {
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 50px;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-style: dashed;
+    border-radius: 25px;
 
+    padding-right: 20px;
+
+    &.google-play {
+      padding-left: 50px;
+      background-image: url(../images/google-app/google-play.svg);
+      background-position: 20px center;
+    }
+
+    &.app-store {
+      padding-left: 55px;
+      background-image: url(../images/google-app/app-store.svg);
+      background-position: 25px center;
+    }
   }
 
-  .app-store {
-
+  .link + .link {
+    margin-top: 10px;
   }
 
   &-img {
-
+    background-image: url(../images/google-app/image.png);
+    width: 333px;
+    height: 278px;
+    z-index: 10;
+    margin-top: -10px;
   }
 }

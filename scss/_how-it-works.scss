@@ -1,19 +1,65 @@
 .how-it-works {
+  background-color: $background-primary;
+  background-image: url(../images/how-it-works/background.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
 
+  h1 {
+    font-size: $font-size-64;
+    font-family: $berlingske-serif-lt;
+    color: $color-phone;
+  }
 
   &-cards {
-
+    display: flex;
+    flex-flow: row wrap;
+    width: 730px;
   }
 
   &-card {
 
 
-    &-img {}
+    &-img {
+      width: 100%;
+      height: 120px;
+      background-position: center left;
+      background-repeat: no-repeat;
 
-    h2 {}
+      &.img-1 {
+        background-image: url(../images/how-it-works/1.png);
+      }
 
-    p {}
+      &.img-2 {
+        background-image: url(../images/how-it-works/2.png);
+      }
+
+      &.img-3 {
+        background-image: url(../images/how-it-works/3.png);
+      }
+
+      &.img-4 {
+        background-image: url(../images/how-it-works/4.png);
+      }
+
+      &.img-5 {
+        background-image: url(../images/how-it-works/5.png);
+      }
+
+      &.img-6 {
+        background-image: url(../images/how-it-works/6.png);
+      }
+    }
+
+    h2 {
+      font-size: $font-size-24;
+      font-family: $berlingske-serif-lt;
+      color: $color-phone;
+    }
+
+    p {
+      font-size: $font-size-16;
+      font-family: $gotham-pro-light;
+      color: $color-nav;
+    }
   }
-
-  &-big-img {}
 }

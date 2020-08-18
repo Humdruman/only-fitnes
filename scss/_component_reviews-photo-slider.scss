@@ -1,10 +1,13 @@
-.reviews-photo-slider {
+.reviews-photo {
 
-  &:before {}
+  &-photo-slider {
 
-  &:after {}
 
-  &-photo {
-
+    &-photo {
+      width: 380px;
+      height: 295px;
+      border-radius: 15px;
+    }
   }
 }
+

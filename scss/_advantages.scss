@@ -1,25 +1,67 @@
 .advantages {
+  background-image: url(../images/advantages/background.jpg);
+  background-position: center top;
+  background-color: $background-primary;
 
+  h1 {
+    font-size: $font-size-64;
+    font-family: $berlingske-serif-lt;
+    color: $color-phone;
 
-  h1 {}
+    margin-bottom: 55px;
+  }
 
-  &-container {}
+  &-container {
+    justify-content: space-between;
+    width: 1103px;
+
+  }
 
   &-info {
 
 
-    &-img {}
+    &-img {
+      background-size: contain;
 
-    h2 {}
+      &.img-device {
+        background-image: url(../images/advantages/device.png);
+        width: 109px;
+        height: 91px;
+      }
+
+      &.img-result {
+        background-image: url(../images/advantages/result.png);
+        width: 115px;
+        height: 90px;
+        margin-top: 1px;
+      }
+
+      &.img-achievements {
+        background-image: url(../images/advantages/achievements.png);
+        width: 97px;
+        height: 120px;
+      }
+
+      &.img-teach {
+        background-image: url(../images/advantages/teach.png);
+        width: 136px;
+        height: 110px;
+        margin-top: 10px;
+      }
+    }
+
+    h2 {
+      font-size: $font-size-24;
+      font-family: $berlingske-serif-lt;
+      color: $color-phone;
+
+      margin: 25px 0;
+    }
 
     p {
-
+      font-size: $font-size-16;
+      font-family: $gotham-pro-light;
+      color: $color-nav;
     }
   }
-
-  &-big-image-container {
-
-  }
-
-  &-big-image {}
 }

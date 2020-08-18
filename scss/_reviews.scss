@@ -1,5 +1,10 @@
 .reviews {
+  background-color: $background-primary;
 
-
-
+  h1 {
+    font-size: $font-size-64;
+    font-family: $berlingske-serif-lt;
+    color: $color-phone;
+    text-align: center;
+  }
 }

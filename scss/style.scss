@@ -6,23 +6,26 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 @import "utilites";
 
 @import "header";
-@import "start-test";
-@import "advantages";
-@import "reviews";
-@import "how-it-works";
-@import "begin";
-@import "footer";
-
-// Components
+@import "main";
 @import "component_google-container";
+@import "advantages";
+@import "workouts-and-reviews-background";
 @import "component_workout";
+@import "reviews";
 @import "component_reviews-photo-slider";
 @import "component_reviews-review-container";
+@import "how-it-works";
 @import "component_pricing";
+@import "begin";
 @import "component_contact-form";
+@import "footer";
 
 // Media
 @import "media-query";

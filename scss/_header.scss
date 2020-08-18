@@ -1,23 +1,95 @@
 .header {
+  height: 57px;
+  background-color: $background-primary;
 
+  nav {
+    align-items: center;
+    height: 100%;
+    font-size: $font-size-16;
+    font-family: $circe-light;
+    color: $color-nav;
+
+    .separator {
+      background-color: rgb(141, 141, 141);
+      opacity: 0.102;
+
+      width: 1px;
+      height: 34px;
+    }
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 162px;
+
+      &.select {
+// ??????????????????
+      }
+    }
+  }
+
+  .rel {
+    width: 100%;
+    height: 0;
+    position: relative;
+  }
+
+  .header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: flex-end;
+    height: 95px;
+  }
 
   &-title {
+    background-image: url(../images/header/online.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    font-size: $font-size-13;
+    font-family: $gotham-pro-light;
+    color: $color-nav;
+    width: 94px;
 
+    margin-left: 30px;
   }
 
   &-phone {
+    font-size: $font-size-20;
+    font-family: $circe-regular;
+    color: $color-phone;
 
+    margin-bottom: 5px;
   }
 
   &-email {
-
+    font-size: $font-size-13;
+    font-family: $circe-light;
+    color: $color-nav;
   }
 
   &-instagram {
+    background-image: url(../images/header/instagram.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
 
+    margin: 0 30px;
   }
 
   &-request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
 
+    font-size: $font-size-10;
+    font-family: $gotham-pro-bold;
+    color: $color-phone;
+    text-transform: uppercase;
   }
 }

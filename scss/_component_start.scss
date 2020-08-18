@@ -1,0 +1,90 @@
+.start {
+  width: 100%;
+
+  &-test {
+    h1 {
+      font-size: 72px;
+      font-family: $berlingske-serif-lt;
+      color: $color-phone;
+
+      margin-bottom: 26px;
+    }
+
+    &-img {
+      background-image: url(../images/main/slider/start/Pencil.png);
+      background-position: left;
+      width: 210px;
+      height: 115px;
+    }
+
+    p {
+      font-size: $font-size-18;
+      font-family: $gotham-pro-light;
+      color: $color-nav;
+
+      padding-bottom: 26px;
+
+      .pink {
+        color: $color-pink;
+      }
+    }
+
+    &-button {
+      font-family: $gotham-pro-bold;
+      color: $color-button;
+      text-transform: uppercase;
+
+      background-image: -moz-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      background-image: -webkit-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      background-image: -ms-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      box-shadow: 0px 25px 50px 0px rgba(255, 231, 145, 0.15), 0px 3px 0px 0px rgba(227, 182, 0, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+      padding: 0 70px;
+      height: 86px;
+    }
+
+    &-clients {
+
+
+      h2 {
+        font-size: 1rem;
+        font-family: $gotham-pro-regular;
+        color: $color-phone;
+        text-transform: uppercase;
+      }
+    }
+
+    &-client {
+      align-items: center;
+
+      &-img {
+        background-size: contain;
+        width: 67px;
+        height: 67px;
+
+        &.img-1 {
+          background-image: url(../images/main/slider/start/clients/1.png)
+        }
+
+        &.img-2 {
+          background-image: url(../images/main/slider/start/clients/2.png)
+        }
+
+        &.img-3 {
+          background-image: url(../images/main/slider/start/clients/3.png)
+        }
+
+        &.img-4 {
+          background-image: url(../images/main/slider/start/clients/4.png)
+        }
+      }
+
+      &-name {
+        font-size: $font-size-13;
+        font-family: $gotham-pro-light;
+        color: $color-nav;
+        text-align: center;
+        margin-top: 17px;
+      }
+    }
+  }
+}

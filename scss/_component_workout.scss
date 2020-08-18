@@ -1,19 +1,64 @@
 .workouts {
-
+  padding-bottom: 147px;
 
   &-cards {
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
   }
 
   &-card {
+    width: 380px;
+    align-items: center;
 
+    &-img {
+      width: 380px;
+      height: 380px;
+      background-size: contain;
+      background-position: center;
+    }
 
-    &-img {}
+    h2 {
+      font-size: $font-size-24;
+      font-family: $berlingske-serif-lt;
+      color: $color-phone;
 
-    h2 {}
+      margin-top: 24px;
+      margin-bottom: 14px;
+    }
 
-    p {}
+    p {
+      font-size: $font-size-16;
+      font-family: $gotham-pro-light;
+      color: rgb(166, 171, 176);
+      padding-left: 30px;
+      background-image: url(../images/workouts/rub.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
 
-    a {}
+    .about {
+      font-size: $font-size-12;
+      font-family: $gotham-pro-bold;
+      color: $color-about;
+      text-transform: uppercase;
+      height: 80px;
+      border-bottom: 1px dashed rgb(136, 198, 223);
+      margin-right: 30px;
+    }
+
+    .more {
+      background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+      background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+      background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+      box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+      height: 60px;
+      padding: 0 30px;
+
+      font-size: $font-size-10;
+      font-family: $gotham-pro-bold;
+      color: $color-button-1;
+      text-transform: uppercase;
+    }
   }
 }
