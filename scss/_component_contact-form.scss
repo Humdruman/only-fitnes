@@ -1,46 +1,131 @@
 .contact {
-
+  background-image: url(../images/contact-form/background.jpg);
 
   &-container {
-
+    background-color: $background-primary;
+    box-shadow: 0px 0px 35px 15px rgba(44, 44, 44, 0.03);
+    width: 1050px;
+    height: 715px;
+    padding-top: 110px;
   }
 
   &-form {
-
+    width: 750px;
 
     h1 {
+      font-size: $font-size-64;
+      font-family: $berlingske-serif-lt;
+      color: $color-phone;
 
+      margin-bottom: 35px;
     }
 
     p {
+      font-size: $font-size-18;
+      font-family: $gotham-pro-light;
+      color: $color-phone;
+      opacity: 0.7;
 
+      margin-bottom: 60px;
     }
 
     &-inputs {
+      display: flex;
+      flex-flow: row wrap;
 
+      &-text {
+        display: flex;
+        align-items: center;
 
-      &-name {}
+        font-size: $font-size-18;
+        font-family: $gotham-pro-light;
+        color: $color-phone;
 
-      &-email {}
+        background-color: $background-contact-input;
+        width: 360px;
+        height: 86px;
+        border-radius: 43px;
+        padding-left: 110px;
+        padding-right: 30px;
+        background-repeat: no-repeat;
+        background-position: left 36px center;
 
-      &-submit {}
+        &::placeholder {
+          font-size: $font-size-18;
+          font-family: $gotham-pro-light;
+          color: $color-phone;
+          opacity: 0.7;
+        }
 
+        &.name {
+          background-image: url(../images/contact-form/name.png);
+        }
+
+        &.phone {
+          background-image: url(../images/contact-form/phone.png);
+        }
+      }
+
+      &-submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: $font-size-normal;
+        font-family: $gotham-pro-bold;
+        color: $color-button-1;
+        text-transform: uppercase;
+
+        background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        box-shadow: 0px 25px 50px 0px rgba(253, 215, 65, 0.15), 0px 3px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+        width: 360px;
+        height: 86px;
+
+        padding: 0 50px;
+
+      }
     }
 
     &-info {
+      justify-content: center;
+      margin-left: 10px;
 
+      &-text {
+        font-size: $font-size-normal;
+        font-family: $gotham-pro-light;
+        color: $color-phone-this-number;
 
-      &-text {}
+        margin-bottom: 10px;
+      }
 
-      &-phone {}
+      &-phone {
+        font-size: $font-size-18;
+        font-family: $gotham-pro-light;
+        color: $color-phone;
+      }
     }
 
     .personal-data {
 
+      &-input {
+        display: none;
+      }
 
-      &-input {}
+      &-label {
+        font-size: $font-size-13;
+        font-family: $gotham-pro-light;
+        color: $color-phone-this-number;
 
-      &-label {}
+        width: 16px;
+        height: 16px;
+        background: black;
+      }
+
+      .personal-data-input:checked + .personal-data-label {
+        background-image: url(../images/contact-form/checkbox-checked.png);
+      }
     }
   }
 }

@@ -1,23 +1,71 @@
 .footer {
+  position: relative;
 
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-image: url(../images/footer/background.jpg);
+    width: 1711px;
+    height: 722px;
+    background-position: center;
+  }
+
+  &-container {
+    position: absolute;
+    height: 140px;
+    bottom: -140px;
+    left: 0;
+    align-items: center;
+    width: 872px;
+  }
 
   &-title {
+    background-image: url(../images/header/online.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    font-size: $font-size-13;
+    font-family: $gotham-pro-light;
+    color: $color-nav;
+    width: 94px;
 
+    margin-left: 30px;
   }
 
   &-phone {
+    font-size: $font-size-20;
+    font-family: $circe-regular;
+    color: $color-phone;
 
+    margin-bottom: 5px;
   }
 
   &-email {
-
+    font-size: $font-size-13;
+    font-family: $circe-light;
+    color: $color-nav;
   }
 
   &-instagram {
+    background-image: url(../images/header/instagram.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
 
+    margin: 0 30px;
   }
 
   &-request {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
 
+    font-size: $font-size-10;
+    font-family: $gotham-pro-bold;
+    color: $color-phone;
+    text-transform: uppercase;
   }
 }

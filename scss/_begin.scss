@@ -1,22 +1,80 @@
 .begin {
+  background-color: $background-primary;
 
-
-  h1 {}
+  h1 {
+    font-size: $font-size-64;
+    font-family: $berlingske-serif-lt;
+    color: $color-phone;
+  }
 
   &-cards {
-
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
   }
 
   &-card {
-    background-color: rgb(255, 255, 255);
+    background-color: $background-primary;
     box-shadow: 0px 0px 35px 15px rgba(44, 44, 44, 0.03);
+    width: 294px;
+    height: 304px;
 
     &-img {
+      background-size: contain;
 
+      &.img-1 {
+        background-image: url(../images/begin/1.png);
+        width: 150px;
+        height: 175px;
+      }
+
+      &.img-2 {
+        background-image: url(../images/begin/2.png);
+        width: 183px;
+        height: 164.5px;
+      }
+
+      &.img-3 {
+        background-image: url(../images/begin/3.png);
+        width: 214px;
+        height: 175px;
+      }
+
+      &.img-4 {
+        background-image: url(../images/begin/4.png);
+        width: 150px;
+        height: 163px;
+      }
+
+      &.img-5 {
+        background-image: url(../images/begin/5.png);
+        width: 150px;
+        height: 161px;
+      }
+
+      &.img-6 {
+        background-image: url(../images/begin/6.png);
+        width: 150px;
+        height: 165px;
+      }
+
+      &.img-7 {
+        background-image: url(../images/begin/7.png);
+        width: 208px;
+        height: 163px;
+      }
+
+      &.img-8 {
+        background-image: url(../images/begin/8.png);
+        width: 169px;
+        height: 165px;
+      }
     }
 
     &-text {
-
+      font-size: $font-size-18;
+      font-family: $gotham-pro-light;
+      color: $color-phone;
     }
   }
 }
