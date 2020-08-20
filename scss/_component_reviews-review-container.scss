@@ -1,5 +1,8 @@
 .reviews-review-container {
   background-color: $background-primary;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 
   .reviews-review {
     background-image: url(../images/reviews/reviews-review/background.png);
@@ -7,6 +10,8 @@
     height: 697px;
     align-items: center;
     padding-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
 
     h2 {
       font-size: $font-size-32;

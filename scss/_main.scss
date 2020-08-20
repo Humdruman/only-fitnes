@@ -1,6 +1,11 @@
 .main {
   background-image: url(../images/main/background.jpg);
+  //background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
+  padding-top: 210px;
+  height: 900px;
 
   &-slider {
 

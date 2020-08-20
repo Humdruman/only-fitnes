@@ -1,7 +1,7 @@
 .google-container {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 208px;
   padding-top: 48px;
   align-items: center;
   background-image: url(../images/google-app/background.png);
@@ -12,6 +12,7 @@
     font-size: $font-size-24;
     font-family: $berlingske-serif-lt;
     color: $color-phone;
+    width: 150px;
 
     margin-bottom: 20px;
   }
@@ -27,6 +28,8 @@
     border-color: rgb(216, 216, 216);
     border-style: dashed;
     border-radius: 25px;
+    text-decoration: none;
+    flex-shrink: 0;
 
     padding-right: 20px;
 
@@ -43,7 +46,7 @@
     }
   }
 
-  .link + .link {
+  .google-container-link + .google-container-link {
     margin-top: 10px;
   }
 
