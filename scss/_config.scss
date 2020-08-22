@@ -5,7 +5,7 @@ $gotham-pro-medium: "Gotham-Pro-Medium", sans-serif;
 $gotham-pro-bold: "Gotham-Pro-Bold", sans-serif;
 $circe-regular: "Circe-Regular", sans-serif;
 $circe-light: "Circe-Light", sans-serif;
-$berlingske-serif-lt: "Berlingske-Serif-Lt", sans-serif;
+$berlingske-serif-lt: "Berlingske-Serif-Lt", serif;
 
 // Font colors
 $color-nav: rgb(124, 124, 124);
@@ -13,8 +13,9 @@ $color-phone: rgb(36, 32, 17);
 $color-pink: rgb(245, 150, 198);
 $color-button: rgb(49, 44, 23);
 $color-button-1: rgb(16, 16, 16);
+$color-workout-img-info: rgb(250, 250, 250);
 $color-price: rgb(166, 171, 176);
-$color-about: rgb(66, 207, 132);
+$color-about: rgb(251, 209, 33);
 $color-price: rgb(46, 56, 95);
 $color-price-disabled: rgba(36, 32, 18, 0.2);
 $color-phone-this-number: rgb(173, 171, 165);
@@ -31,13 +32,21 @@ $font-size-20: 1.43rem;
 $font-size-24: 1.71rem;
 $font-size-32: 2.29rem;
 $font-size-36: 2.57rem;
+$font-size-42: 3rem;
 $font-size-64: 4.57rem;
 $font-size-72: 5.14rem;
 
 // Background
 $background-primary: #fff;
 $background-secondary: #fafafa;
-$background-pricing-title-1: rgb(245, 150, 198, 0.6);
-$background-pricing-title-2: rgb(245, 150, 198, 0.8);
-$background-pricing-title-3: rgb(245, 150, 198);
+$background-pink-60: rgb(245, 150, 198, 0.6);
+$background-pink-80: rgb(245, 150, 198, 0.8);
+$background-pink-100: rgb(245, 150, 198);
+$background-green: rgb(96, 211, 104);
 $background-contact-input: rgb(248, 248, 248);
+
+// Mixins
+@mixin border-radius-and-height($height) {
+  height: $height;
+  border-radius: ($height / 2);
+}

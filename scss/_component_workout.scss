@@ -5,6 +5,8 @@
     font-size: $font-size-64;
     font-family: $berlingske-serif-lt;
     color: $color-phone;
+
+    margin-bottom: 45px;
   }
 
   &-cards {
@@ -20,8 +22,31 @@
     &-img {
       width: 380px;
       height: 380px;
-      background-size: contain;
       background-position: center;
+      border-radius: 20px;
+
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: $font-size-10;
+        font-family: $gotham-pro-medium;
+        color: $color-workout-img-info;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin: 30px;
+        padding: 8px;
+        width: max-content;
+
+        &.green {
+          background-color: $background-green;
+        }
+
+        &.pink {
+          background-color: $background-pink-100;
+        }
+      }
     }
 
     h2 {
@@ -33,7 +58,7 @@
       margin-bottom: 14px;
     }
 
-    p {
+    &-price {
       font-size: $font-size-16;
       font-family: $gotham-pro-light;
       color: rgb(166, 171, 176);
@@ -41,30 +66,42 @@
       background-image: url(../images/workouts/rub.png);
       background-repeat: no-repeat;
       background-position: left center;
+      min-height: 20px;
+      margin-bottom: 20px;
     }
 
-    .about {
-      font-size: $font-size-12;
-      font-family: $gotham-pro-bold;
-      color: $color-about;
-      text-transform: uppercase;
-      height: 80px;
-      border-bottom: 1px dashed rgb(136, 198, 223);
-      margin-right: 30px;
-    }
+    &-links {
+      align-items: center;
 
-    .more {
-      background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
-      height: 60px;
-      padding: 0 30px;
+      .about {
+        font-size: $font-size-12;
+        font-family: $gotham-pro-bold;
+        color: $color-about;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1.5em;
+        border-bottom: 1px dashed $color-about;
+        margin-right: 30px;
+      }
 
-      font-size: $font-size-10;
-      font-family: $gotham-pro-bold;
-      color: $color-button-1;
-      text-transform: uppercase;
+      .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+        @include border-radius-and-height(60px);
+        padding: 0 30px;
+
+        font-size: $font-size-10;
+        font-family: $gotham-pro-bold;
+        color: $color-button-1;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
     }
   }
 }

@@ -1,9 +1,13 @@
 .reviews-photo {
+  width: 100%;
 
-  &-photo-slider {
-
+  &-slider {
+    //height: 295px;
 
     &-photo {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
       width: 380px;
       height: 295px;
       border-radius: 15px;
