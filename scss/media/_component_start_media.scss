@@ -1,35 +1,38 @@
 .start {
-  width: 1230px;
-  padding: 0 30px;
+  width: 290px;
+  padding: unset;
   justify-content: space-between;
 
   &-test {
-    width: 560px;
+    width: 290px;
 
     h1 {
-      font-size: 72px;
-      font-family: $berlingske-serif-lt;
-      color: $color-phone;
-      line-height: 1em;
-
-      margin-bottom: 26px;
+      font-size: $font-size-40;
+      //font-family: $berlingske-serif-lt;
+      //color: $color-phone;
+      line-height: 1.1em;
+      //
+      //margin-bottom: 26px;
     }
 
     &-img {
-      background-image: url(../images/main/slider/start/Pencil.png);
-      background-position: left;
-      width: 210px;
-      height: 115px;
-      flex-shrink: 0;
-      margin-left: -45px;
-      margin-right: -35px;
+      //background-image: url(../images/main/slider/start/Pencil.png);
+      //background-position: left;
+      //width: 210px;
+      //height: 115px;
+      //flex-shrink: 0;
+      //margin-left: -45px;
+      //margin-right: -35px;
+      display: none;
     }
 
     p {
-      font-size: $font-size-18;
-      font-family: $gotham-pro-light;
-      color: $color-nav;
-      line-height: 1.6em;
+      font-size: $font-size-normal;
+      //font-family: $gotham-pro-light;
+      //color: $color-nav;
+      //line-height: 1.6em;
+
+      width: 250px;
 
       .pink {
         color: $color-pink;
@@ -41,6 +44,7 @@
       justify-content: center;
       align-items: center;
 
+      font-size: $font-size-13;
       font-family: $gotham-pro-bold;
       color: $color-button;
       text-transform: uppercase;
@@ -50,21 +54,17 @@
       background-image: -webkit-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
       background-image: -ms-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
       box-shadow: 0px 25px 50px 0px rgba(255, 231, 145, 0.15), 0px 3px 0px 0px rgba(227, 182, 0, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
-      padding: 0 70px;
-      @include border-radius-and-height(86px);
-      width: max-content;
+      padding: 0;
+      @include border-radius-and-height(75px);
+      width: 290px;
 
       margin-top: 30px;
     }
   }
 
   .title-media {
-    display: none;
-    font-size: 1rem;
-    font-family: $gotham-pro-regular;
-    color: $color-phone;
-    text-transform: uppercase;
-    text-align: center;
+    display: block;
+    margin-top: 35px;
   }
 
   &-clients {
@@ -72,11 +72,12 @@
     align-items: center;
 
     h2 {
-      font-size: 1rem;
-      font-family: $gotham-pro-regular;
-      color: $color-phone;
-      text-transform: uppercase;
-      text-align: center;
+      display: none;
+      //font-size: 1rem;
+      //font-family: $gotham-pro-regular;
+      //color: $color-phone;
+      //text-transform: uppercase;
+      //text-align: center;
     }
   }
 

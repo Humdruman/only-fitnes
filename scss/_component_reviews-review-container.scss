@@ -4,6 +4,8 @@
   flex-flow: row nowrap;
   align-items: center;
 
+  margin-top: 35px;
+
   .reviews-review {
     align-items: center;
     background-image: url(../images/reviews/reviews-review/background.png);
@@ -72,6 +74,7 @@
       font-family: $gotham-pro-bold;
       color: $color-button-1;
       text-transform: uppercase;
+      text-decoration: none;
 
       margin-bottom: 40px;
     }

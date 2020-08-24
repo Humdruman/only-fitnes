@@ -1,7 +1,6 @@
 .section {
   display: flex;
   justify-content: center;
-  //align-items: center;
   width: 100%;
 }
 
@@ -25,7 +24,6 @@
   @extend %section-flex;
 
   flex-flow: column nowrap;
-  //justify-content: center;
 }
 
 .fl-row {

@@ -78,6 +78,10 @@
     }
   }
 
+  &-devise-show {
+    display: none;
+  }
+
   &-phone {
     font-size: $font-size-20;
     font-family: $circe-regular;
@@ -98,6 +102,7 @@
     width: 60px;
     @include border-radius-and-height(60px);
     background-size: cover;
+    flex-shrink: 0;
 
     margin: 0 30px;
   }

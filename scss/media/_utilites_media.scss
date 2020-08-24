@@ -1,0 +1,28 @@
+%section-flex {
+  display: flex;
+  width: 290px;
+  align-items: center;
+
+  padding: 0;
+  margin: 0 15px;
+}
+
+.fl-col-media {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.fl-row-media {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.site-logo {
+  background-image: url(../images/media/site-logo.png);
+  background-position: center;
+  background-size: contain;
+  width: 74px;
+  height: 34px;
+}
+
+

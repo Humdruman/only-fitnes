@@ -2,7 +2,7 @@
   width: 100%;
 
   &-slider {
-    //height: 295px;
+    position: relative;
 
     &-photo {
       background-repeat: no-repeat;
@@ -11,6 +11,77 @@
       width: 380px;
       height: 295px;
       border-radius: 15px;
+    }
+
+    .slick-arrow {
+      font-size: 0;
+      position: absolute;
+      top: 110px;
+      width: 78px;
+      @include border-radius-and-height(78px);
+      background-size: contain;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 5;
+
+      &.slick-prev {
+        background-image: url(../images/slider-prev.png);
+        left: -38px;
+      }
+
+      &.slick-next {
+        background-image: url(../images/slider-next.png);
+        right: -38px;
+      }
+    }
+  }
+
+  .reviews-photo-append-dots {
+    margin: 50px 0;
+    height: 30px;
+
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    li.slick-active {
+      cursor: default;
+    }
+
+    li + li {
+      margin-left: 10px;
+    }
+
+    button {
+      font-size: 0;
+      list-style: none;
+      width: 6px;
+      height: 6px;
+      border: none;
+      background-image: url(../images/slider-btn.png);
+      background-color: transparent;
+      background-size: cover;
+
+    }
+
+    li.slick-active button {
+      width: 10px;
+      height: 10px;
+      background-image: url(../images/slider-btn-active.png);
     }
   }
 }
