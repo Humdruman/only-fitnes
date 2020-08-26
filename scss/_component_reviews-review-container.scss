@@ -1,10 +1,16 @@
 .reviews-review-container {
-  background-color: $background-primary;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-
+  width: 100%;
   margin-top: 35px;
+
+  .reviews-review-slider {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
 
   .reviews-review {
     align-items: center;
@@ -21,7 +27,7 @@
     margin: 0 30px;
 
     h2 {
-      font-size: $font-size-32;
+      @include fontSize(32);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
 
@@ -39,7 +45,7 @@
       @include border-radius-and-height(50px);
       border: 1px dashed rgb(216, 216, 216);
 
-      font-size: $font-size-18;
+      @include fontSize(18);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
       text-decoration: none;
@@ -49,7 +55,7 @@
     }
 
     p {
-      font-size: $font-size-normal;
+      @include fontSize(14);
       font-family: $gotham-pro-light;
       color: $color-nav;
       text-align: center;
@@ -70,7 +76,7 @@
       @include border-radius-and-height(60px);
       padding: 0 42px;
 
-      font-size: $font-size-10;
+      @include fontSize(10);
       font-family: $gotham-pro-bold;
       color: $color-button-1;
       text-transform: uppercase;

@@ -7,7 +7,7 @@
     width: 560px;
 
     h1 {
-      font-size: 72px;
+      @include fontSize(72);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
       line-height: 1em;
@@ -26,7 +26,7 @@
     }
 
     p {
-      font-size: $font-size-18;
+      @include fontSize(18);
       font-family: $gotham-pro-light;
       color: $color-nav;
       line-height: 1.6em;
@@ -60,7 +60,7 @@
 
   .title-media {
     display: none;
-    font-size: 1rem;
+    @include fontSize(14);
     font-family: $gotham-pro-regular;
     color: $color-phone;
     text-transform: uppercase;
@@ -72,7 +72,7 @@
     align-items: center;
 
     h2 {
-      font-size: 1rem;
+      @include fontSize(14);
       font-family: $gotham-pro-regular;
       color: $color-phone;
       text-transform: uppercase;
@@ -108,7 +108,7 @@
     }
 
     &-name {
-      font-size: $font-size-13;
+      @include fontSize(13);
       font-family: $gotham-pro-light;
       color: $color-nav;
       text-align: center;

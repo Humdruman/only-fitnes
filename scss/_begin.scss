@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 
   h1 {
-    font-size: $font-size-64;
+    @include fontSize(64);
     font-family: $berlingske-serif-lt;
     color: $color-phone;
 
@@ -70,7 +70,7 @@
     }
 
     &-text {
-      font-size: $font-size-18;
+      @include fontSize(18);
       font-family: $gotham-pro-light;
       color: $color-phone;
       text-align: center;

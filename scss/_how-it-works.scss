@@ -12,7 +12,7 @@
   }
 
   h1 {
-    font-size: $font-size-64;
+    @include fontSize(64);
     font-family: $berlingske-serif-lt;
     color: $color-phone;
   }
@@ -60,7 +60,7 @@
     }
 
     h2 {
-      font-size: $font-size-24;
+      @include fontSize(24);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
 
@@ -69,7 +69,7 @@
     }
 
     p {
-      font-size: $font-size-16;
+      @include fontSize(16);
       font-family: $gotham-pro-light;
       color: $color-nav;
       line-height: 1.75em;

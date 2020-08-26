@@ -11,7 +11,7 @@
   nav {
     align-items: center;
     height: 100%;
-    font-size: $font-size-16;
+    @include fontSize(16);
     font-family: $circe-light;
     color: $color-nav;
 
@@ -28,7 +28,7 @@
       justify-content: center;
       align-items: center;
 
-      font-size: $font-size-16;
+      @include fontSize(16);
       font-family: $circe-light;
       color: $color-nav;
       text-decoration: none;
@@ -58,7 +58,7 @@
   }
 
   &-title {
-    font-size: $font-size-13;
+    @include fontSize(13);
     font-family: $gotham-pro-light;
     color: $color-nav;
     width: 110px;
@@ -83,7 +83,7 @@
   }
 
   &-phone {
-    font-size: $font-size-20;
+    @include fontSize(20);
     font-family: $circe-regular;
     color: $color-phone;
     letter-spacing: 0.05em;
@@ -91,8 +91,12 @@
     margin-bottom: 5px;
   }
 
+  &-contact {
+    justify-content: flex-end;
+  }
+
   &-email {
-    font-size: $font-size-13;
+    @include fontSize(13);
     font-family: $circe-light;
     color: $color-nav;
   }
@@ -113,7 +117,7 @@
     align-items: center;
     padding: 0 30px;
 
-    font-size: $font-size-10;
+    @include fontSize(10);
     font-family: $gotham-pro-bold;
     color: $color-phone;
     text-transform: uppercase;

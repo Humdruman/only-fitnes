@@ -25,7 +25,7 @@
   }
 
   &-title {
-    font-size: $font-size-13;
+    @include fontSize(13);
     font-family: $gotham-pro-light;
     color: $color-nav;
     width: 110px;
@@ -45,8 +45,12 @@
     }
   }
 
+  &-devise-show {
+    display: none;
+  }
+
   &-phone {
-    font-size: $font-size-20;
+    @include fontSize(20);
     font-family: $circe-regular;
     color: $color-phone;
     letter-spacing: 0.05em;
@@ -55,7 +59,7 @@
   }
 
   &-email {
-    font-size: $font-size-13;
+    @include fontSize(13);
     font-family: $circe-light;
     color: $color-nav;
   }
@@ -75,7 +79,7 @@
     align-items: center;
     padding: 0 30px;
 
-    font-size: $font-size-10;
+    @include fontSize(10);
     font-family: $gotham-pro-bold;
     color: $color-phone;
     text-transform: uppercase;

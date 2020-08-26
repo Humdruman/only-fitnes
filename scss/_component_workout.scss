@@ -2,7 +2,7 @@
   padding-bottom: 147px;
 
   h1 {
-    font-size: $font-size-64;
+    @include fontSize(64);
     font-family: $berlingske-serif-lt;
     color: $color-phone;
 
@@ -24,18 +24,18 @@
       height: 380px;
       background-position: center;
       border-radius: 20px;
+      padding: 30px;
 
       .info {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        font-size: $font-size-10;
+        @include fontSize(10);
         font-family: $gotham-pro-medium;
         color: $color-workout-img-info;
         text-transform: uppercase;
         border-radius: 5px;
-        margin: 30px;
         padding: 8px;
         width: max-content;
 
@@ -50,7 +50,7 @@
     }
 
     h2 {
-      font-size: $font-size-24;
+      @include fontSize(24);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
 
@@ -59,7 +59,7 @@
     }
 
     &-price {
-      font-size: $font-size-16;
+      @include fontSize(16);
       font-family: $gotham-pro-light;
       color: rgb(166, 171, 176);
       padding-left: 30px;
@@ -74,7 +74,7 @@
       align-items: center;
 
       .about {
-        font-size: $font-size-12;
+        @include fontSize(12);
         font-family: $gotham-pro-bold;
         color: $color-about;
         text-transform: uppercase;
@@ -96,7 +96,7 @@
         @include border-radius-and-height(60px);
         padding: 0 30px;
 
-        font-size: $font-size-10;
+        @include fontSize(10);
         font-family: $gotham-pro-bold;
         color: $color-button-1;
         text-transform: uppercase;

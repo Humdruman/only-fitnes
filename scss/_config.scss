@@ -20,22 +20,11 @@ $color-price: rgb(46, 56, 95);
 $color-price-disabled: rgba(36, 32, 18, 0.2);
 $color-phone-this-number: rgb(173, 171, 165);
 
-
 // Font size
-$font-size-10: 0.71rem;
-$font-size-12: 0.86rem;
-$font-size-13: 0.93rem;
-$font-size-normal: 1rem;
-$font-size-16: 1.14rem;
-$font-size-18: 1.28rem;
-$font-size-20: 1.43rem;
-$font-size-24: 1.71rem;
-$font-size-32: 2.29rem;
-$font-size-36: 2.57rem;
-$font-size-40: 2.86rem;
-$font-size-42: 3rem;
-$font-size-64: 4.57rem;
-$font-size-72: 5.14rem;
+$font-size-normal: 14;
+@mixin fontSize($size) {
+  font-size: ($size/$font-size-normal)*1rem;
+}
 
 // Background
 $background-primary: #fff;

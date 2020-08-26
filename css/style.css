@@ -77,10 +77,6 @@ html {
   flex-flow: column nowrap;
 }
 
-.fl-j-end {
-  justify-content: flex-end;
-}
-
 .fl-a-cen {
   align-items: center;
 }
@@ -105,7 +101,7 @@ html {
 .header nav {
   align-items: center;
   height: 100%;
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Circe-Light", sans-serif;
   color: #7c7c7c;
 }
@@ -119,7 +115,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Circe-Light", sans-serif;
   color: #7c7c7c;
   text-decoration: none;
@@ -140,7 +136,7 @@ html {
   z-index: 10;
 }
 .header-title {
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   width: 110px;
@@ -161,14 +157,17 @@ html {
   display: none;
 }
 .header-phone {
-  font-size: 1.43rem;
+  font-size: 1.4285714286rem;
   font-family: "Circe-Regular", sans-serif;
   color: #242011;
   letter-spacing: 0.05em;
   margin-bottom: 5px;
 }
+.header-contact {
+  justify-content: flex-end;
+}
 .header-email {
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Circe-Light", sans-serif;
   color: #7c7c7c;
 }
@@ -186,7 +185,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  font-size: 0.71rem;
+  font-size: 0.7142857143rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #242011;
   text-transform: uppercase;
@@ -286,7 +285,7 @@ html {
   width: 560px;
 }
 .start-test h1 {
-  font-size: 72px;
+  font-size: 5.1428571429rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   line-height: 1em;
@@ -302,7 +301,7 @@ html {
   margin-right: -35px;
 }
 .start-test p {
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   line-height: 1.6em;
@@ -370,7 +369,7 @@ html {
   background-image: url(../images/main/slider/start/clients/4.png);
 }
 .start-client-name {
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   text-align: center;
@@ -388,7 +387,7 @@ html {
   height: 474px;
 }
 .google-container h2 {
-  font-size: 1.71rem;
+  font-size: 1.7142857143rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   width: 150px;
@@ -399,7 +398,7 @@ html {
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
-  font-size: 0.86rem;
+  font-size: 0.8571428571rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #242011;
   text-transform: uppercase;
@@ -441,25 +440,25 @@ html {
 .advantages {
   background-image: url(../images/advantages/background.jpg);
   background-position: center top;
+  background-repeat: no-repeat;
   background-color: #fff;
   width: 100%;
   height: 1330px;
   padding-top: 100px;
 }
 .advantages h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   line-height: 1.125em;
   text-align: center;
+  max-width: 800px;
   margin-bottom: 55px;
 }
 .advantages-container {
+  flex-flow: row wrap;
   justify-content: space-between;
-  width: 1103px;
-}
-.advantages .advantages-container + .advantages-container {
-  margin-top: 65px;
+  width: 1100px;
 }
 .advantages-info {
   align-items: center;
@@ -491,7 +490,7 @@ html {
   margin-top: 10px;
 }
 .advantages-info h2 {
-  font-size: 1.71rem;
+  font-size: 1.7142857143rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   text-align: center;
@@ -500,12 +499,18 @@ html {
   margin-bottom: 15px;
 }
 .advantages-info p {
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   text-align: center;
   line-height: 1.75em;
   width: 300px;
+}
+.advantages .advantages-info:nth-of-type(odd) + .advantages-info {
+  margin-left: 520px;
+}
+.advantages .advantages-info:nth-of-type(n+3) + .advantages-info {
+  margin-top: 65px;
 }
 
 .workouts-and-reviews-background {
@@ -521,7 +526,7 @@ html {
   padding-bottom: 147px;
 }
 .workouts h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-bottom: 45px;
@@ -540,17 +545,17 @@ html {
   height: 380px;
   background-position: center;
   border-radius: 20px;
+  padding: 30px;
 }
 .workouts-card-img .info {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.71rem;
+  font-size: 0.7142857143rem;
   font-family: "Gotham-Pro-Medium", sans-serif;
   color: #fafafa;
   text-transform: uppercase;
   border-radius: 5px;
-  margin: 30px;
   padding: 8px;
   width: max-content;
 }
@@ -561,14 +566,14 @@ html {
   background-color: #f596c6;
 }
 .workouts-card h2 {
-  font-size: 1.71rem;
+  font-size: 1.7142857143rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-top: 24px;
   margin-bottom: 14px;
 }
 .workouts-card-price {
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #a6abb0;
   padding-left: 30px;
@@ -582,7 +587,7 @@ html {
   align-items: center;
 }
 .workouts-card-links .about {
-  font-size: 0.86rem;
+  font-size: 0.8571428571rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #fbd121;
   text-transform: uppercase;
@@ -602,7 +607,7 @@ html {
   height: 60px;
   border-radius: 30px;
   padding: 0 30px;
-  font-size: 0.71rem;
+  font-size: 0.7142857143rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #101010;
   text-transform: uppercase;
@@ -610,11 +615,10 @@ html {
 }
 
 .reviews {
-  background-color: #fff;
   padding-bottom: 65px;
 }
 .reviews h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   text-align: center;
@@ -697,11 +701,17 @@ html {
 }
 
 .reviews-review-container {
-  background-color: #fff;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  width: 100%;
   margin-top: 35px;
+}
+.reviews-review-container .reviews-review-slider {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 .reviews-review-container .reviews-review {
   align-items: center;
@@ -717,7 +727,7 @@ html {
   margin: 0 30px;
 }
 .reviews-review-container .reviews-review h2 {
-  font-size: 2.29rem;
+  font-size: 2.2857142857rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-bottom: 20px;
@@ -732,7 +742,7 @@ html {
   height: 50px;
   border-radius: 25px;
   border: 1px dashed #d8d8d8;
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   text-decoration: none;
@@ -758,7 +768,7 @@ html {
   height: 60px;
   border-radius: 30px;
   padding: 0 42px;
-  font-size: 0.71rem;
+  font-size: 0.7142857143rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #101010;
   text-transform: uppercase;
@@ -786,7 +796,7 @@ html {
   align-items: flex-start;
 }
 .how-it-works h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
 }
@@ -825,14 +835,14 @@ html {
   background-image: url(../images/how-it-works/6.png);
 }
 .how-it-works-card h2 {
-  font-size: 1.71rem;
+  font-size: 1.7142857143rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .how-it-works-card p {
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   line-height: 1.75em;
@@ -844,7 +854,7 @@ html {
   padding-bottom: 60px;
 }
 .pricing h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-bottom: 45px;
@@ -856,7 +866,7 @@ html {
 .pricing-card {
   display: flex;
   justify-content: center;
-  border-radius: 1.43rem;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0px 10px 56px 14px rgba(40, 40, 40, 0.05);
   width: 335px;
@@ -876,7 +886,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.29rem;
+  font-size: 2.2857142857rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   width: 100%;
@@ -919,7 +929,7 @@ html {
   margin-left: 20px;
 }
 .pricing-card-info-text {
-  font-size: 1.14rem;
+  font-size: 1.1428571429rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
 }
@@ -929,12 +939,12 @@ html {
   margin: 30px 0 36px 0;
 }
 .pricing-card-price-value {
-  font-size: 2.57rem;
+  font-size: 2.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #2e385f;
 }
 .pricing-card-price-value.disabled {
-  font-size: 1.71rem;
+  font-size: 1.7142857143rem;
   color: rgba(36, 32, 18, 0.2);
   text-decoration: line-through;
   margin-left: 15px;
@@ -968,7 +978,7 @@ html {
   padding-bottom: 60px;
 }
 .begin h1 {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
   font-family: "Berlingske-Serif-Lt", serif;
   color: #242011;
   margin-bottom: 60px;
@@ -1022,7 +1032,7 @@ html {
   background-image: url(../images/begin/8.png);
 }
 .begin-card-text {
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #242011;
   text-align: center;
@@ -1055,10 +1065,10 @@ html {
   margin-bottom: 35px;
 }
 .contact-form h1 .big {
-  font-size: 4.57rem;
+  font-size: 4.5714285714rem;
 }
 .contact-form p {
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #242011;
   opacity: 0.7;
@@ -1071,7 +1081,7 @@ html {
 .contact-form-inputs-text {
   display: flex;
   align-items: center;
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #242011;
   background-color: #f8f8f8;
@@ -1086,7 +1096,7 @@ html {
   margin-bottom: 20px;
 }
 .contact-form-inputs-text::placeholder {
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #242011;
 }
@@ -1129,7 +1139,7 @@ html {
   margin-bottom: 10px;
 }
 .contact-form-info-phone {
-  font-size: 1.28rem;
+  font-size: 1.2857142857rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #242011;
 }
@@ -1138,7 +1148,7 @@ html {
 }
 .contact-form .personal-data-label {
   display: inline-block;
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #adaba5;
   background-image: url(../images/contact-form/checkbox.png);
@@ -1180,7 +1190,7 @@ html {
   margin-left: -270px;
 }
 .footer-title {
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Gotham-Pro-Light", sans-serif;
   color: #7c7c7c;
   width: 110px;
@@ -1197,15 +1207,18 @@ html {
   margin-right: 9px;
   margin-bottom: 1px;
 }
+.footer-devise-show {
+  display: none;
+}
 .footer-phone {
-  font-size: 1.43rem;
+  font-size: 1.4285714286rem;
   font-family: "Circe-Regular", sans-serif;
   color: #242011;
   letter-spacing: 0.05em;
   margin-bottom: 5px;
 }
 .footer-email {
-  font-size: 0.93rem;
+  font-size: 0.9285714286rem;
   font-family: "Circe-Light", sans-serif;
   color: #7c7c7c;
 }
@@ -1222,7 +1235,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  font-size: 0.71rem;
+  font-size: 0.7142857143rem;
   font-family: "Gotham-Pro-Bold", sans-serif;
   color: #242011;
   text-transform: uppercase;
@@ -1236,6 +1249,14 @@ html {
 }
 
 @media all and (max-width: 760px) {
+  .br {
+    display: none;
+  }
+
+  .br-m {
+    display: inline;
+  }
+
   .section-flex-row, .section-flex-col {
     display: flex;
     width: 290px;
@@ -1274,7 +1295,7 @@ html {
   .header nav {
     align-items: center;
     height: 100%;
-    font-size: 1.14rem;
+    font-size: 1.1428571429rem;
     font-family: "Circe-Light", sans-serif;
     color: #7c7c7c;
   }
@@ -1288,7 +1309,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.14rem;
+    font-size: 1.1428571429rem;
     font-family: "Circe-Light", sans-serif;
     color: #7c7c7c;
     text-decoration: none;
@@ -1345,9 +1366,9 @@ html {
   }
 
   .main {
-    background-size: contain;
-    padding-top: 120px;
-    height: 1215px;
+    background-image: url(../images/main/background_devise.jpg);
+    padding-top: 115px;
+    height: 1214px;
   }
   .main-slider {
     width: 100%;
@@ -1373,84 +1394,54 @@ html {
     width: 290px;
   }
   .start-test h1 {
-    font-size: 2.86rem;
+    font-size: 2.8571428571rem;
     line-height: 1.1em;
+    width: 240px;
+    margin-bottom: 15px;
   }
   .start-test-img {
     display: none;
   }
   .start-test p {
     font-size: 1rem;
-    width: 250px;
+    width: 100%;
   }
   .start-test p .pink {
     color: #f596c6;
   }
   .start-test-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.93rem;
-    font-family: "Gotham-Pro-Bold", sans-serif;
-    color: #312c17;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-image: -moz-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, #ffd453 99%, #ffd453 100%);
-    background-image: -webkit-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, #ffd453 99%, #ffd453 100%);
-    background-image: -ms-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, #ffd453 99%, #ffd453 100%);
-    box-shadow: 0px 25px 50px 0px rgba(255, 231, 145, 0.15), 0px 3px 0px 0px rgba(227, 182, 0, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+    font-size: 0.9285714286rem;
     padding: 0;
-    height: 75px;
-    border-radius: 37.5px;
     width: 290px;
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .start .title-media {
     display: block;
     margin-top: 35px;
   }
   .start-clients {
-    width: 200px;
-    align-items: center;
+    width: unset;
   }
   .start-clients h2 {
     display: none;
   }
-  .start-client {
-    width: 200px;
-    align-items: center;
-    margin-top: 22px;
-  }
-  .start-client-img {
-    background-size: contain;
-    width: 67px;
-    height: 67px;
-  }
-  .start-client-img.img-1 {
-    background-image: url(../images/main/slider/start/clients/1.png);
-  }
-  .start-client-img.img-2 {
-    background-image: url(../images/main/slider/start/clients/2.png);
-  }
-  .start-client-img.img-3 {
-    background-image: url(../images/main/slider/start/clients/3.png);
-  }
-  .start-client-img.img-4 {
-    background-image: url(../images/main/slider/start/clients/4.png);
-  }
   .start-client-name {
-    font-size: 0.93rem;
-    font-family: "Gotham-Pro-Light", sans-serif;
-    color: #7c7c7c;
-    text-align: center;
-    margin-top: 17px;
+    font-size: 0.9285714286rem;
+    margin-top: 5px;
+  }
+  .start .start-client:nth-of-type(2) {
+    order: 1;
+  }
+  .start .start-client:nth-of-type(4) {
+    order: 1;
   }
 
   .google-container {
     position: unset;
+    margin-top: 30px;
   }
   .google-container h2 {
-    font-size: 1.71rem;
+    font-size: 1.7142857143rem;
     font-family: "Berlingske-Serif-Lt", serif;
     color: #242011;
     width: 150px;
@@ -1461,7 +1452,7 @@ html {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
-    font-size: 0.86rem;
+    font-size: 0.8571428571rem;
     font-family: "Gotham-Pro-Bold", sans-serif;
     color: #242011;
     text-transform: uppercase;
@@ -1498,6 +1489,479 @@ html {
     height: 278px;
     z-index: 10;
     margin-top: -10px;
+  }
+
+  .advantages {
+    background-image: url(../images/advantages/background-devise.jpg);
+    background-position: left -100px top;
+    height: 1820px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+  .advantages h1 {
+    font-size: 2.4285714286rem;
+    width: 300px;
+    margin-bottom: 415px;
+  }
+  .advantages-container {
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 290px;
+  }
+  .advantages .advantages-info + .advantages-info {
+    margin-top: 40px;
+  }
+  .advantages .advantages-info:nth-of-type(odd) + .advantages-info {
+    margin-left: unset;
+  }
+  .advantages .advantages-info:nth-of-type(n+3) + .advantages-info {
+    margin-top: unset;
+  }
+
+  .workouts-and-reviews-background {
+    background-image: url(../images/background_workouts-and-reviews_devise.jpg);
+    background-position: top right;
+    padding-top: 70px;
+  }
+
+  .workouts {
+    padding-bottom: 30px;
+  }
+  .workouts h1 {
+    font-size: 2.4285714286rem;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .workouts-cards {
+    position: relative;
+    display: block;
+    grid-template-columns: unset;
+    grid-gap: unset;
+    width: 290px;
+  }
+  .workouts-cards .slick-arrow {
+    font-size: 0;
+    position: absolute;
+    top: 162px;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .workouts-cards .slick-arrow.slick-prev {
+    background-image: url(../images/slider-prev_devise.png);
+    left: -14px;
+  }
+  .workouts-cards .slick-arrow.slick-next {
+    background-image: url(../images/slider-next_devise.png);
+    right: -14px;
+  }
+  .workouts .workouts-append-dots {
+    height: 30px;
+    margin-top: 60px;
+  }
+  .workouts .workouts-append-dots ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .workouts .workouts-append-dots li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .workouts .workouts-append-dots li.slick-active {
+    cursor: default;
+  }
+  .workouts .workouts-append-dots li + li {
+    margin-left: 10px;
+  }
+  .workouts .workouts-append-dots button {
+    font-size: 0;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    border: none;
+    background-image: url(../images/slider-btn.png);
+    background-color: transparent;
+    background-size: cover;
+  }
+  .workouts .workouts-append-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/slider-btn-active.png);
+  }
+  .workouts-card {
+    width: 290px;
+    align-items: center;
+  }
+  .workouts-card-img {
+    width: 290px;
+    padding: 15px;
+  }
+  .workouts-card-links {
+    flex-flow: column nowrap;
+  }
+  .workouts-card-links .about {
+    order: 1;
+    margin-top: 30px;
+    margin-right: unset;
+  }
+  .reviews {
+    width: 290px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .reviews h1 {
+    font-size: 2.4285714286rem;
+    width: 290px;
+    margin-bottom: 55px;
+  }
+
+  .reviews-photo-slider {
+    position: relative;
+  }
+  .reviews-photo-slider-photo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 290px;
+    height: 225px;
+    border-radius: 15px;
+  }
+  .reviews-photo-slider .slick-arrow {
+    font-size: 0;
+    position: absolute;
+    top: 85px;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .reviews-photo-slider .slick-arrow.slick-prev {
+    background-image: url(../images/slider-prev_devise.png);
+    left: -14px;
+  }
+  .reviews-photo-slider .slick-arrow.slick-next {
+    background-image: url(../images/slider-next_devise.png);
+    right: -14px;
+  }
+  .reviews-photo .reviews-photo-append-dots {
+    display: none;
+  }
+
+  .reviews-review-container {
+    flex-flow: column nowrap;
+  }
+  .reviews-review-container .reviews-review-slider {
+    display: block;
+    width: 270px;
+    box-shadow: 0px 15px 70px 0px rgba(73, 73, 73, 0.1);
+    border-radius: 10px;
+  }
+  .reviews-review-container .reviews-review-append-dots {
+    height: 30px;
+    margin-top: 30px;
+  }
+  .reviews-review-container .reviews-review-append-dots ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-review-container .reviews-review-append-dots li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .reviews-review-container .reviews-review-append-dots li.slick-active {
+    cursor: default;
+  }
+  .reviews-review-container .reviews-review-append-dots li + li {
+    margin-left: 10px;
+  }
+  .reviews-review-container .reviews-review-append-dots button {
+    font-size: 0;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    border: none;
+    background-image: url(../images/slider-btn.png);
+    background-color: transparent;
+    background-size: cover;
+  }
+  .reviews-review-container .reviews-review-append-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/slider-btn-active.png);
+  }
+  .reviews-review-container .reviews-review-slide {
+    width: 270px;
+  }
+  .reviews-review-container .reviews-review {
+    background-size: contain;
+    box-shadow: unset;
+    width: 270px;
+    margin: 0;
+  }
+  .reviews-review-container .reviews-review h2 {
+    font-size: 2.2857142857rem;
+    font-family: "Berlingske-Serif-Lt", serif;
+    color: #242011;
+    margin-bottom: 20px;
+  }
+  .reviews-review-container .reviews-review .instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/reviews/reviews-review/instagram.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px dashed #d8d8d8;
+    font-size: 1.2857142857rem;
+    font-family: "Berlingske-Serif-Lt", serif;
+    color: #242011;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 45px;
+  }
+  .reviews-review-container .reviews-review p {
+    font-size: 1rem;
+    font-family: "Gotham-Pro-Light", sans-serif;
+    color: #7c7c7c;
+    text-align: center;
+    line-height: 2em;
+    margin: 40px 0;
+  }
+  .reviews-review-container .reviews-review .read-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -moz-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    background-image: -webkit-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    background-image: -ms-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 42px;
+    font-size: 0.7142857143rem;
+    font-family: "Gotham-Pro-Bold", sans-serif;
+    color: #101010;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 40px;
+  }
+  .reviews-review-container .reviews-review-img {
+    width: 100%;
+    height: 157px;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+
+  .how-it-works {
+    background-image: unset;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .how-it-works .section-flex-col {
+    align-items: flex-start;
+  }
+  .how-it-works h1 {
+    font-size: 2.4285714286rem;
+    white-space: nowrap;
+  }
+  .how-it-works-cards {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -10px;
+  }
+  .how-it-works-card {
+    align-items: center;
+    width: 290px;
+    margin-top: 20px;
+  }
+  .how-it-works-card-img {
+    background-position: bottom center;
+  }
+  .how-it-works-card h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .how-it-works-card p {
+    text-align: center;
+    width: 300px;
+  }
+
+  .pricing {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pricing h1 {
+    font-size: 2.4285714286rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .pricing-cards {
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 320px;
+  }
+  .pricing-card {
+    width: 290px;
+  }
+  .pricing-card-container {
+    width: 320px;
+  }
+  .pricing .pricing-card + .pricing-card {
+    margin-left: unset;
+    margin-top: 20px;
+  }
+
+  .begin {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .begin h1 {
+    font-size: 2.4285714286rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .contact {
+    padding-top: 5px;
+    padding-bottom: 95px;
+    position: relative;
+  }
+  .contact:before {
+    content: "";
+    position: absolute;
+    top: 275px;
+    left: 0;
+    background-image: url(../images/contact-form/background-left_devise.png);
+    background-position: left top;
+    width: 62px;
+    height: 420px;
+    z-index: 10;
+  }
+  .contact-container {
+    background-image: url(../images/contact-form/background_devise.jpg);
+    background-repeat: no-repeat;
+    background-position: right top 132px;
+    width: 290px;
+    height: 730px;
+    padding: 35px 20px 25px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form h1 {
+    font-size: 2.4285714286rem;
+    margin-bottom: 20px;
+  }
+  .contact-form h1 .big {
+    font-size: 2.4285714286rem;
+  }
+  .contact-form p {
+    font-size: 1rem;
+    width: 170px;
+    margin-bottom: 25px;
+  }
+  .contact-form-inputs-text {
+    font-size: 1rem;
+    width: 245px;
+  }
+  .contact-form-inputs-text::placeholder {
+    font-size: 1rem;
+  }
+  .contact-form-inputs-text.name {
+    margin-right: 0;
+  }
+  .contact-form-inputs-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7857142857rem;
+    color: #fafafa;
+    width: 245px;
+    padding: 0;
+    margin-right: 0;
+  }
+  .contact-form-info {
+    display: none;
+  }
+  .contact-form .personal-data-input {
+    display: none;
+  }
+  .contact-form .personal-data-label {
+    display: inline-block;
+    font-size: 0.9285714286rem;
+    font-family: "Gotham-Pro-Light", sans-serif;
+    color: #adaba5;
+    background-image: url(../images/contact-form/checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    min-width: 16px;
+    height: 16px;
+    padding-left: 30px;
+    user-select: none;
+    cursor: pointer;
+  }
+  .contact-form .personal-data .personal-data-input:checked + .personal-data-label {
+    background-image: url(../images/contact-form/checkbox-checked.png);
+  }
+
+  .footer:after {
+    content: unset;
+  }
+  .footer-container {
+    height: 95px;
+  }
+  .footer .site-logo-container {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-devise-show {
+    display: block;
+    background-image: url(../images/media/header-show.png);
+    background-size: contain;
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    cursor: pointer;
+  }
+  .footer-phone {
+    display: none;
+  }
+  .footer-email {
+    display: none;
+  }
+  .footer-instagram {
+    display: none;
+  }
+  .footer-request {
+    display: none;
   }
 }
 

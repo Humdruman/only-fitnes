@@ -7,9 +7,10 @@
   //background-image: url(../images/google-app/background.png);
   //width: 266px;
   //height: 474px;
+  margin-top: 30px;
 
   h2 {
-    font-size: $font-size-24;
+    @include fontSize(24);
     font-family: $berlingske-serif-lt;
     color: $color-phone;
     width: 150px;
@@ -23,7 +24,7 @@
     align-items: center;
     background-repeat: no-repeat;
 
-    font-size: $font-size-12;
+    @include fontSize(12);
     font-family: $gotham-pro-bold;
     color: $color-phone;
     text-transform: uppercase;

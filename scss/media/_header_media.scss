@@ -12,7 +12,7 @@
   nav {
     align-items: center;
     height: 100%;
-    font-size: $font-size-16;
+    @include fontSize(16);
     font-family: $circe-light;
     color: $color-nav;
 
@@ -29,7 +29,7 @@
       justify-content: center;
       align-items: center;
 
-      font-size: $font-size-16;
+      @include fontSize(16);
       font-family: $circe-light;
       color: $color-nav;
       text-decoration: none;

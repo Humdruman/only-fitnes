@@ -20,19 +20,19 @@
     z-index: 20;
 
     h1 {
-      font-size: $font-size-42;
+      @include fontSize(42);
       font-family: $berlingske-serif-lt;
       color: $color-phone;
 
       margin-bottom: 35px;
 
       .big {
-        font-size: $font-size-64;
+        @include fontSize(64);
       }
     }
 
     p {
-      font-size: $font-size-18;
+      @include fontSize(18);
       font-family: $gotham-pro-light;
       color: $color-phone;
       opacity: 0.7;
@@ -48,7 +48,7 @@
         display: flex;
         align-items: center;
 
-        font-size: $font-size-18;
+        @include fontSize(18);
         font-family: $gotham-pro-light;
         color: $color-phone;
 
@@ -65,7 +65,7 @@
         margin-bottom: 20px;
 
         &::placeholder {
-          font-size: $font-size-18;
+          @include fontSize(18);
           font-family: $gotham-pro-light;
           color: $color-phone;
         }
@@ -85,7 +85,7 @@
         justify-content: center;
         align-items: center;
 
-        font-size: $font-size-normal;
+        @include fontSize(14);
         font-family: $gotham-pro-bold;
         color: $color-button-1;
         text-transform: uppercase;
@@ -110,7 +110,7 @@
       margin-left: 10px;
 
       &-text {
-        font-size: $font-size-normal;
+        @include fontSize(14);
         font-family: $gotham-pro-light;
         color: $color-phone-this-number;
 
@@ -118,7 +118,7 @@
       }
 
       &-phone {
-        font-size: $font-size-18;
+        @include fontSize(18);
         font-family: $gotham-pro-bold;
         color: $color-phone;
       }
@@ -132,7 +132,7 @@
 
       &-label {
         display: inline-block;
-        font-size: $font-size-13;
+        @include fontSize(13);
         font-family: $gotham-pro-light;
         color: $color-phone-this-number;
         background-image: url(../images/contact-form/checkbox.png);

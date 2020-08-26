@@ -7,12 +7,13 @@
     width: 290px;
 
     h1 {
-      font-size: $font-size-40;
+      @include fontSize(40);
       //font-family: $berlingske-serif-lt;
       //color: $color-phone;
       line-height: 1.1em;
+      width: 240px;
       //
-      //margin-bottom: 26px;
+      margin-bottom: 15px;
     }
 
     &-img {
@@ -27,12 +28,12 @@
     }
 
     p {
-      font-size: $font-size-normal;
+      @include fontSize(14);
       //font-family: $gotham-pro-light;
       //color: $color-nav;
       //line-height: 1.6em;
 
-      width: 250px;
+      width: 100%;
 
       .pink {
         color: $color-pink;
@@ -40,25 +41,25 @@
     }
 
     &-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-size: $font-size-13;
-      font-family: $gotham-pro-bold;
-      color: $color-button;
-      text-transform: uppercase;
-      text-decoration: none;
-
-      background-image: -moz-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
-      background-image: -webkit-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
-      background-image: -ms-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
-      box-shadow: 0px 25px 50px 0px rgba(255, 231, 145, 0.15), 0px 3px 0px 0px rgba(227, 182, 0, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+      //
+      @include fontSize(13);
+      //font-family: $gotham-pro-bold;
+      //color: $color-button;
+      //text-transform: uppercase;
+      //text-decoration: none;
+      //
+      //background-image: -moz-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      //background-image: -webkit-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      //background-image: -ms-linear-gradient(90deg, rgba(249, 187, 2, 0.99608) 0%, rgb(255, 212, 83) 99%, rgb(255, 212, 83) 100%);
+      //box-shadow: 0px 25px 50px 0px rgba(255, 231, 145, 0.15), 0px 3px 0px 0px rgba(227, 182, 0, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
       padding: 0;
-      @include border-radius-and-height(75px);
+      //@include border-radius-and-height(75px);
       width: 290px;
-
-      margin-top: 30px;
+      //
+      margin-top: 25px;
     }
   }
 
@@ -68,8 +69,8 @@
   }
 
   &-clients {
-    width: 200px;
-    align-items: center;
+    width: unset;
+    //align-items: center;
 
     h2 {
       display: none;
@@ -82,38 +83,46 @@
   }
 
   &-client {
-    width: 200px;
-    align-items: center;
-    margin-top: 22px;
-
-    &-img {
-      background-size: contain;
-      width: 67px;
-      height: 67px;
-
-      &.img-1 {
-        background-image: url(../images/main/slider/start/clients/1.png)
-      }
-
-      &.img-2 {
-        background-image: url(../images/main/slider/start/clients/2.png)
-      }
-
-      &.img-3 {
-        background-image: url(../images/main/slider/start/clients/3.png)
-      }
-
-      &.img-4 {
-        background-image: url(../images/main/slider/start/clients/4.png)
-      }
-    }
+    //width: unset;
+    //align-items: center;
+    //margin-top: 22px;
+    //
+    //&-img {
+    //  background-size: contain;
+      //width: 67px;
+      //height: 67px;
+      //
+      //&.img-1 {
+      //  background-image: url(../images/main/slider/start/clients/1.png)
+      //}
+      //
+      //&.img-2 {
+      //  background-image: url(../images/main/slider/start/clients/2.png)
+      //}
+      //
+      //&.img-3 {
+      //  background-image: url(../images/main/slider/start/clients/3.png)
+      //}
+      //
+      //&.img-4 {
+      //  background-image: url(../images/main/slider/start/clients/4.png)
+      //}
+    //}
 
     &-name {
-      font-size: $font-size-13;
-      font-family: $gotham-pro-light;
-      color: $color-nav;
-      text-align: center;
-      margin-top: 17px;
+      @include fontSize(13);
+      //font-family: $gotham-pro-light;
+      //color: $color-nav;
+      //text-align: center;
+      margin-top: 5px;
     }
+  }
+
+  .start-client:nth-of-type(2) {
+    order: 1;
+  }
+
+  .start-client:nth-of-type(4) {
+    order: 1;
   }
 }
