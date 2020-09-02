@@ -77,10 +77,6 @@ html {
   flex-flow: column nowrap;
 }
 
-.fl-a-cen {
-  align-items: center;
-}
-
 .site-logo {
   background-image: url(../images/site-logo.png);
   background-position: center;
@@ -111,6 +107,9 @@ html {
   width: 1px;
   height: 34px;
 }
+.header nav .nav-link-select-container {
+  position: relative;
+}
 .header nav .nav-link {
   display: flex;
   justify-content: center;
@@ -121,6 +120,22 @@ html {
   text-decoration: none;
   height: 100%;
   width: 162px;
+}
+.header nav .nav-link-btn {
+  cursor: pointer;
+  user-select: none;
+}
+.header nav .nav-link-btn.opened + .nav-link-select {
+  max-height: 500px;
+}
+.header nav .nav-link-select {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
 }
 .header .rel {
   width: 100%;
