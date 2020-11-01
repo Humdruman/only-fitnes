@@ -1,185 +1,118 @@
-.workouts {
-  padding-bottom: 30px;
-
-  h1 {
-    @include fontSize(34);
-    //font-family: $berlingske-serif-lt;
-    //color: $color-phone;
-    width: 290px;
-    text-align: center;
-
-    margin-bottom: 35px;
+@media all and (max-width: 1230px) {
+  .workouts-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  &-cards {
-    position: relative;
-    display: block;
-    grid-template-columns: unset;
-    grid-gap: unset;
-    width: 290px;
+@media all and (max-width: 880px) {
+  .workouts {
+    padding-bottom: 30px;
 
-    .slick-arrow {
-      font-size: 0;
-      position: absolute;
-      top: 162px;
-      width: 45px;
-      @include border-radius-and-height(45px);
-      background-size: contain;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      border: none;
-      cursor: pointer;
-      z-index: 5;
-
-      &.slick-prev {
-        background-image: url(../images/slider-prev_devise.png);
-        left: -14px;
-      }
-
-      &.slick-next {
-        background-image: url(../images/slider-next_devise.png);
-        right: -14px;
-      }
-    }
-  }
-
-  .workouts-append-dots {
-    height: 30px;
-    margin-top: 60px;
-
-    ul {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-    }
-
-    li.slick-active {
-      cursor: default;
-    }
-
-    li + li {
-      margin-left: 10px;
-    }
-
-    button {
-      font-size: 0;
-      list-style: none;
-      width: 6px;
-      height: 6px;
-      border: none;
-      background-image: url(../images/slider-btn.png);
-      background-color: transparent;
-      background-size: cover;
-
-    }
-
-    li.slick-active button {
-      width: 10px;
-      height: 10px;
-      background-image: url(../images/slider-btn-active.png);
-    }
-  }
-
-  &-card {
-    width: 290px;
-    align-items: center;
-
-    &-img {
+    h1 {
+      @include fontSize(34);
       width: 290px;
-      //height: 380px;
-      //background-position: center;
-      //border-radius: 20px;
-      padding: 15px;
-      //
-      //.info {
-      //  display: flex;
-      //  justify-content: center;
-      //  align-items: center;
-      //
-      //  @include fontSize(10);
-      //  font-family: $gotham-pro-medium;
-      //  color: $color-workout-img-info;
-      //  text-transform: uppercase;
-      //  border-radius: 5px;
-      //  padding: 8px;
-      //  width: max-content;
-      //
-      //  &.green {
-      //    background-color: $background-green;
-      //  }
-      //
-      //  &.pink {
-      //    background-color: $background-pink-100;
-      //  }
-      //}
+      text-align: center;
+
+      margin-bottom: 35px;
     }
-    //
-    //h2 {
-    //  @include fontSize(24);
-    //  font-family: $berlingske-serif-lt;
-    //  color: $color-phone;
-    //
-    //  margin-top: 24px;
-    //  margin-bottom: 14px;
-    //}
-    //
-    //&-price {
-    //  @include fontSize(16);
-    //  font-family: $gotham-pro-light;
-    //  color: rgb(166, 171, 176);
-    //  padding-left: 30px;
-    //  background-image: url(../images/workouts/rub.png);
-    //  background-repeat: no-repeat;
-    //  background-position: left center;
-    //  min-height: 20px;
-    //  margin-bottom: 20px;
-    //}
 
-    &-links {
-      flex-flow: column nowrap;
-      //align-items: center;
+    &-cards {
+      position: relative;
+      display: block;
+      grid-template-columns: unset;
+      grid-gap: unset;
+      width: 290px;
 
-      .about {
-        order: 1;
-        //@include fontSize(12);
-        //font-family: $gotham-pro-bold;
-        //color: $color-about;
-        //text-transform: uppercase;
-        //text-decoration: none;
-        //line-height: 1.5em;
-        //border-bottom: 1px dashed $color-about;
-        margin-top: 30px;
-        margin-right: unset;
+      .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        top: 162px;
+        width: 45px;
+        @include border-radius-and-height(45px);
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        z-index: 5;
+
+        &.slick-prev {
+          background-image: url(../images/slider-prev_devise.png);
+          left: -14px;
+        }
+
+        &.slick-next {
+          background-image: url(../images/slider-next_devise.png);
+          right: -14px;
+        }
+      }
+    }
+
+    .workouts-append-dots {
+      height: 30px;
+      margin-top: 60px;
+
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
       }
 
-      .more {
-        //display: flex;
-        //justify-content: center;
-        //align-items: center;
-        //
-        //background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
-        //@include border-radius-and-height(60px);
-        //padding: 0 30px;
-        //
-        //@include fontSize(10);
-        //font-family: $gotham-pro-bold;
-        //color: $color-button-1;
-        //text-transform: uppercase;
-        //text-decoration: none;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      li.slick-active {
+        cursor: default;
+      }
+
+      li + li {
+        margin-left: 10px;
+      }
+
+      button {
+        font-size: 0;
+        list-style: none;
+        width: 6px;
+        height: 6px;
+        border: none;
+        background-image: url(../images/slider-btn.png);
+        background-color: transparent;
+        background-size: cover;
+
+      }
+
+      li.slick-active button {
+        width: 10px;
+        height: 10px;
+        background-image: url(../images/slider-btn-active.png);
+      }
+    }
+
+    &-card {
+      width: 290px;
+      align-items: center;
+
+      &-img {
+        width: 290px;
+        padding: 15px;
+      }
+
+      &-links {
+        flex-flow: column nowrap;
+
+        .about {
+          order: 1;
+          margin-top: 30px;
+          margin-right: unset;
+        }
       }
     }
   }

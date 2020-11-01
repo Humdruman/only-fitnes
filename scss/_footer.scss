@@ -9,7 +9,8 @@
     bottom: -100%;
     background-image: url(../images/footer/background.png);
     left: 0;
-    width: 1711px;
+    max-width: 1711px;
+    width: 100%;
     height: 719px;
     background-position: center;
   }
@@ -31,6 +32,7 @@
     width: 110px;
     line-height: 1.7em;
 
+    margin-right: auto;
     margin-left: 30px;
 
     .online {
@@ -54,6 +56,7 @@
     font-family: $circe-regular;
     color: $color-phone;
     letter-spacing: 0.05em;
+    width: max-content;
 
     margin-bottom: 5px;
   }

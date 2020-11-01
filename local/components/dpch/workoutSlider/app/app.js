@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 760) {
-  
+  if (window.innerWidth > 880) {
   } else {
     $('.workouts-cards').slick({
       infinite: true,
@@ -11,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
+  let windowWidth = window.innerWidth;
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) {
+    if (windowWidth <= 880 && window.innerWidth > 880) {
       $('.workouts-cards').slick('unslick');
-    } else {
+    } else if (windowWidth > 880 && window.innerWidth <= 880) {
       $('.workouts-cards').slick({
         infinite: true,
         slidesToShow: 1,
@@ -23,5 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         appendDots: $('.workouts-append-dots'),
       });
     }
+    windowWidth = window.innerWidth;
   })
 })

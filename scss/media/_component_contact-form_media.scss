@@ -1,175 +1,131 @@
-.contact {
-  //background-image: url(../images/contact-form/background.jpg);
-  //background-position: bottom;
-  //background-repeat: no-repeat;
-  padding-top: 5px;
-  padding-bottom: 95px;
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 275px;
-    left: 0;
-    background-image: url(../images/contact-form/background-left_devise.png);
-    background-position: left top;
-    width: 62px;
-    height: 420px;
-    z-index: 10;
+@media all and (max-width: 1230px) {
+  .contact-container {
+    margin-left: 15px;
   }
+}
 
-  &-container {
-    background-image: url(../images/contact-form/background_devise.jpg);
-    background-repeat: no-repeat;
-    background-position: right top 132px;
-    //background-color: $background-primary;
-    //box-shadow: 0px 0px 35px 15px rgba(44, 44, 44, 0.03);
-    width: 290px;
-    height: 730px;
-    //border-radius: 20px;
+@media all and (max-width: 880px) {
+  .contact {
+    padding-top: 5px;
+    padding-bottom: 95px;
+    position: relative;
 
-    padding: 35px 20px 25px;
-    //margin-left: -120px;
-    //margin-bottom: 140px;
-  }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 275px;
+      left: 0;
+      background-image: url(../images/contact-form/background-left_devise.png);
+      background-position: left top;
+      width: 62px;
+      height: 420px;
+      z-index: 10;
+    }
 
-  &-form {
-    //z-index: 20;
-    width: 100%;
+    &-container {
+      align-items: flex-start;
+      background-image: url(../images/contact-form/background_devise.jpg);
+      background-repeat: no-repeat;
+      background-position: right top 132px;
+      width: 584px;
+      height: 730px;
 
-    h1 {
-      @include fontSize(34);
-      //font-family: $berlingske-serif-lt;
-      //color: $color-phone;
+      padding: 35px 40px 25px;
+    }
 
-      margin-bottom: 20px;
+    &-form {
+      width: 100%;
+      max-width: 360px;
 
-      .big {
+      h1 {
         @include fontSize(34);
+
+        margin-bottom: 20px;
+
+        .big {
+          @include fontSize(34);
+        }
       }
-    }
 
-    p {
-      @include fontSize(14);
-      width: 170px;
-      //font-family: $gotham-pro-light;
-      //color: $color-phone;
-      //opacity: 0.7;
-      //
-      margin-bottom: 25px;
-    }
-
-    &-inputs {
-      //display: flex;
-      //flex-flow: row wrap;
-
-      &-text {
-        //display: flex;
-        //align-items: center;
-
+      p {
         @include fontSize(14);
-        //font-family: $gotham-pro-light;
-        //color: $color-phone;
+        width: 170px;
+        margin-bottom: 25px;
+      }
 
-        //background-color: $background-contact-input;
-        width: 245px;
-        //height: 86px;
-        //border-radius: 43px;
-        //padding-left: 110px;
-        //padding-right: 30px;
-        //background-repeat: no-repeat;
-        //background-position: left 36px center;
-        //background-size: contain;
-        //
-        //margin-bottom: 20px;
-        //
-        &::placeholder {
+      &-inputs {
+        flex-flow: column nowrap;
+
+        &-text {
+
           @include fontSize(14);
-          //font-family: $gotham-pro-light;
-          //color: $color-phone;
+          width: 100%;
+          &::placeholder {
+            @include fontSize(14);
+          }
+
+          &.name {
+            margin-right: 0;
+          }
+
+          &.phone {
+          }
         }
 
-        &.name {
-          //background-image: url(../images/contact-form/name.png);
+        &-submit {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include fontSize(11);
+          color: $color-workout-img-info;
+          width: 245px;
+          padding: 0;
           margin-right: 0;
         }
-
-        &.phone {
-          //background-image: url(../images/contact-form/phone.png);
-        }
       }
 
-      &-submit {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include fontSize(11);
-        //font-family: $gotham-pro-bold;
-        color: $color-workout-img-info;
-        //text-transform: uppercase;
-        //letter-spacing: 0.05em;
-        //
-        //background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-        //box-shadow: 0px 25px 50px 0px rgba(253, 215, 65, 0.15), 0px 3px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
-        width: 245px;
-        //@include border-radius-and-height(86px);
-        //cursor: pointer;
-        //
-        padding: 0;
-        //margin-bottom: 20px;
-        margin-right: 0;
-      }
-    }
-
-    &-info {
-      display: none;
-      //justify-content: center;
-      //margin-left: 10px;
-      //
-      //&-text {
-      //  @include fontSize(14);
-      //  font-family: $gotham-pro-light;
-      //  color: $color-phone-this-number;
-      //
-      //  margin-bottom: 10px;
-      //}
-      //
-      //&-phone {
-      //  @include fontSize(18);
-      //  font-family: $gotham-pro-bold;
-      //  color: $color-phone;
-      //}
-    }
-
-    .personal-data {
-
-      &-input {
+      &-info {
         display: none;
       }
 
-      &-label {
-        display: inline-block;
-        @include fontSize(13);
-        font-family: $gotham-pro-light;
-        color: $color-phone-this-number;
-        background-image: url(../images/contact-form/checkbox.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left center;
+      .personal-data {
 
-        min-width: 16px;
-        height: 16px;
-        padding-left: 30px;
-        user-select: none;
-        cursor: pointer;
-      }
+        &-input {
+          display: none;
+        }
 
-      .personal-data-input:checked + .personal-data-label {
-        background-image: url(../images/contact-form/checkbox-checked.png);
+        &-label {
+          display: inline-block;
+          @include fontSize(13);
+          font-family: $gotham-pro-light;
+          color: $color-phone-this-number;
+          background-image: url(../images/contact-form/checkbox.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: left center;
+
+          min-width: 16px;
+          height: 16px;
+          padding-left: 30px;
+          user-select: none;
+          cursor: pointer;
+        }
+
+        .personal-data-input:checked + .personal-data-label {
+          background-image: url(../images/contact-form/checkbox-checked.png);
+        }
       }
+    }
+  }
+}
+
+@media all and (max-width: 615px) {
+  .contact {
+    &-container {
+      width: 290px;
+
+      padding: 35px 20px 25px;
     }
   }
 }

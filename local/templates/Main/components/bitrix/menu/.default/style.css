@@ -1,0 +1,110 @@
+.nav {
+    height: 57px;
+    font-size: 1.1428571429rem;
+    font-family: "Circe-Light", sans-serif;
+    color: #7c7c7c;
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 15px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1200px){
+    .nav {
+        max-width: 1100px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav {
+        display: none;
+    }
+}
+
+.link-select-container {
+    position: relative;
+    height: 100%;
+}
+.link-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 162px;
+    position: relative;
+    font-size: 1.1428571429rem;
+    font-family: "Circe-Light", sans-serif;
+    color: #7c7c7c;
+    text-decoration: none;
+}
+.link-text::before {
+    position: absolute;
+    width: 1px;
+    height: 34px;
+    left: 0;
+    content: "";
+    background-color: #8d8d8d;
+    opacity: 0.1;
+}
+.link-text:last-of-type::after {
+    position: absolute;
+    width: 1px;
+    height: 34px;
+    right: 0;
+    content: "";
+    background-color: #8d8d8d;
+    opacity: 0.1;
+}
+.link-btn {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+.link-btn::before {
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 25px;
+    width: 11px;
+    height: 6px;
+    content: "";
+    background-image: url(../images/header/nav-link-btn.svg);
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+.link-btn.opened::before {
+    transform: rotate(180deg);
+}
+.link-btn > .link-text:last-of-type::after {
+    content: unset;
+}
+.link-btn.opened + .link-select {
+    max-height: max-content;
+}
+.link-select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 99;
+}
+.link-select .link-text {
+    padding: 5px 0;
+}
+.link-select .link-text:before, .link-select .link-text:after {
+    content: unset;
+}

@@ -7,6 +7,7 @@
   background-image: url(../images/google-app/background.png);
   width: 266px;
   height: 474px;
+  z-index: 999;
 
   h2 {
     @include fontSize(24);

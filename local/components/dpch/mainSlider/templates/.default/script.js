@@ -56,7 +56,7 @@
 	      slidesToShow: 1,
 	      slidesToScroll: 1,
 	      dots: true,
-	      appendDots: $('.main-append-dots')
+	      appendDots: $('.interactive_slider')
 	    });
 	  }
 	
@@ -67,7 +67,7 @@
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
 	        dots: true,
-	        appendDots: $('.main-append-dots')
+	        appendDots: $('.interactive_slider')
 	      });
 	    } else {
 	      $('.main-slider').slick('unslick');

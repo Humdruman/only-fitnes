@@ -1,147 +1,161 @@
-.reviews-review-container {
-  flex-flow: column nowrap;
-  //margin-top: 35px;
+@media all and (max-width: 1500px) {
+  .reviews-review-container {
 
-  .reviews-review-slider {
-    display: block;
-    width: 270px;
-    box-shadow: 0px 15px 70px 0px rgba(73, 73, 73, 0.1);
-    border-radius: 10px;
+    .reviews-review-slide:nth-of-type(n+4) {
+      display: none;
+    }
   }
+}
 
-  .reviews-review-append-dots {
-    height: 30px;
-    margin-top: 30px;
+@media all and (max-width: 1000px) {
+  .reviews-review-container {
 
-    ul {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
-      align-items: center;
+    .reviews-review-slide:nth-of-type(n+3) {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 880px) {
+  .reviews-review-container {
+    flex-flow: column nowrap;
+
+    .reviews-review-slider {
+      display: block;
+      width: 270px;
+      box-shadow: 0px 15px 70px 0px rgba(73, 73, 73, 0.1);
+      border-radius: 10px;
     }
 
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .reviews-review-slide:nth-of-type(n+4) {
+      display: block;
+    }
 
-      width: 30px;
+    .reviews-review-append-dots {
       height: 30px;
-      cursor: pointer;
+      margin-top: 30px;
+
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+
+      li.slick-active {
+        cursor: default;
+      }
+
+      li + li {
+        margin-left: 10px;
+      }
+
+      button {
+        font-size: 0;
+        list-style: none;
+        width: 6px;
+        height: 6px;
+        border: none;
+        background-image: url(../images/slider-btn.png);
+        background-color: transparent;
+        background-size: cover;
+
+      }
+
+      li.slick-active button {
+        width: 10px;
+        height: 10px;
+        background-image: url(../images/slider-btn-active.png);
+      }
     }
 
-    li.slick-active {
-      cursor: default;
+    .reviews-review-slide {
+      width: 270px;
     }
 
-    li + li {
-      margin-left: 10px;
-    }
-
-    button {
-      font-size: 0;
-      list-style: none;
-      width: 6px;
-      height: 6px;
-      border: none;
-      background-image: url(../images/slider-btn.png);
-      background-color: transparent;
-      background-size: cover;
-
-    }
-
-    li.slick-active button {
-      width: 10px;
-      height: 10px;
-      background-image: url(../images/slider-btn-active.png);
-    }
-  }
-
-  .reviews-review-slide {
-    width: 270px;
-  }
-
-  .reviews-review {
-    //align-items: center;
-    //background-image: unset;
-    //background-color: $background-primary;
-    background-size: contain;
-    box-shadow: unset;
-    width: 270px;
-    //height: 697px;
-    //border-radius: 10px;
-
-    //padding-top: 50px;
-    //padding-right: 25px;
-    //padding-left: 25px;
-    margin: 0;
-
-    h2 {
-      @include fontSize(32);
-      font-family: $berlingske-serif-lt;
-      color: $color-phone;
-
-      margin-bottom: 20px;
-    }
-
-    .instagram {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background-image: url(../images/reviews/reviews-review/instagram.png);
-      background-position: 20px center;
-      background-repeat: no-repeat;
-      @include border-radius-and-height(50px);
-      border: 1px dashed rgb(216, 216, 216);
-
-      @include fontSize(18);
-      font-family: $berlingske-serif-lt;
-      color: $color-phone;
-      text-decoration: none;
-
-      padding-right: 25px;
-      padding-left: 45px;
-    }
-
-    p {
-      @include fontSize(14);
-      font-family: $gotham-pro-light;
-      color: $color-nav;
-      text-align: center;
-      line-height: 2em;
-
-      margin: 40px 0;
-    }
-
-    .read-more {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
-      box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
-      @include border-radius-and-height(60px);
-      padding: 0 42px;
-
-      @include fontSize(10);
-      font-family: $gotham-pro-bold;
-      color: $color-button-1;
-      text-transform: uppercase;
-      text-decoration: none;
-
-      margin-bottom: 40px;
-    }
-
-    &-img {
-      width: 100%;
-      height: 157px;
-      background-position: top center;
+    .reviews-review {
       background-size: contain;
-      background-repeat: no-repeat;
-      flex-shrink: 0;
+      box-shadow: unset;
+      width: 270px;
+      margin: 0;
+
+      h2 {
+        @include fontSize(32);
+        font-family: $berlingske-serif-lt;
+        color: $color-phone;
+
+        margin-bottom: 20px;
+      }
+
+      .instagram {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(../images/reviews/reviews-review/instagram.png);
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        @include border-radius-and-height(50px);
+        border: 1px dashed rgb(216, 216, 216);
+
+        @include fontSize(18);
+        font-family: $berlingske-serif-lt;
+        color: $color-phone;
+        text-decoration: none;
+
+        padding-right: 25px;
+        padding-left: 45px;
+      }
+
+      p {
+        @include fontSize(14);
+        font-family: $gotham-pro-light;
+        color: $color-nav;
+        text-align: center;
+        line-height: 2em;
+
+        margin: 40px 0;
+      }
+
+      .read-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: -moz-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -webkit-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        background-image: -ms-linear-gradient(90deg, rgb(251, 206, 16) 0%, rgb(254, 225, 118) 100%);
+        box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+        @include border-radius-and-height(60px);
+        padding: 0 42px;
+
+        @include fontSize(10);
+        font-family: $gotham-pro-bold;
+        color: $color-button-1;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        margin-bottom: 40px;
+      }
+
+      &-img {
+        width: 100%;
+        height: 157px;
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex-shrink: 0;
+      }
     }
   }
 }

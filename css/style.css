@@ -156,6 +156,7 @@ html {
   color: #7c7c7c;
   width: 110px;
   line-height: 1.7em;
+  margin-right: auto;
   margin-left: 30px;
 }
 .header-title .online {
@@ -251,17 +252,17 @@ html {
   background-image: url(../images/slider-next.png);
   right: -55px;
 }
-.main .main-append-dots {
+.main .interactive_slider {
   margin-top: 110px;
   height: 30px;
 }
-.main .main-append-dots ul {
+.main .interactive_slider ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.main .main-append-dots li {
+.main .interactive_slider li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,13 +270,13 @@ html {
   height: 30px;
   cursor: pointer;
 }
-.main .main-append-dots li.slick-active {
+.main .interactive_slider li.slick-active {
   cursor: default;
 }
-.main .main-append-dots li + li {
+.main .interactive_slider li + li {
   margin-left: 10px;
 }
-.main .main-append-dots button {
+.main .interactive_slider button {
   font-size: 0;
   list-style: none;
   width: 6px;
@@ -285,7 +286,7 @@ html {
   background-color: transparent;
   background-size: cover;
 }
-.main .main-append-dots li.slick-active button {
+.main .interactive_slider li.slick-active button {
   width: 10px;
   height: 10px;
   background-image: url(../images/slider-btn-active.png);
@@ -400,6 +401,7 @@ html {
   background-image: url(../images/google-app/background.png);
   width: 266px;
   height: 474px;
+  z-index: 999;
 }
 .google-container h2 {
   font-size: 1.7142857143rem;
@@ -727,6 +729,7 @@ html {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
 }
 .reviews-review-container .reviews-review {
   align-items: center;
@@ -1191,7 +1194,8 @@ html {
   bottom: -100%;
   background-image: url(../images/footer/background.png);
   left: 0;
-  width: 1711px;
+  max-width: 1711px;
+  width: 100%;
   height: 719px;
   background-position: center;
 }
@@ -1210,6 +1214,7 @@ html {
   color: #7c7c7c;
   width: 110px;
   line-height: 1.7em;
+  margin-right: auto;
   margin-left: 30px;
 }
 .footer-title .online {
@@ -1230,6 +1235,7 @@ html {
   font-family: "Circe-Regular", sans-serif;
   color: #242011;
   letter-spacing: 0.05em;
+  width: max-content;
   margin-bottom: 5px;
 }
 .footer-email {
@@ -1263,7 +1269,7 @@ html {
   margin-right: 20px;
 }
 
-@media all and (max-width: 760px) {
+@media all and (max-width: 880px) {
   .br {
     display: none;
   }
@@ -1297,7 +1303,8 @@ html {
     width: 74px;
     height: 34px;
   }
-
+}
+@media all and (max-width: 880px) {
   .header {
     flex-flow: column;
     align-items: center;
@@ -1339,14 +1346,15 @@ html {
   }
   .header .header-container {
     height: 83px;
+    width: 100%;
+    max-width: 584px;
+    min-width: 290px;
+    padding: 0 15px;
   }
   .header .site-logo-container {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-  .header-title {
-    margin-left: 0;
   }
   .header-title .online {
     display: inline-block;
@@ -1379,7 +1387,13 @@ html {
   .header-request {
     display: none;
   }
-
+}
+@media all and (max-width: 1440px) {
+  .main-slider .slide:nth-child(n+2) {
+    display: none;
+  }
+}
+@media all and (max-width: 880px) {
   .main {
     background-image: url(../images/main/background_devise.jpg);
     padding-top: 115px;
@@ -1396,10 +1410,11 @@ html {
   .main-slider .slick-arrow {
     display: none;
   }
-  .main .main-append-dots {
+  .main .interactive_slider {
     display: none;
   }
-
+}
+@media all and (max-width: 880px) {
   .start {
     width: 290px;
     padding: unset;
@@ -1450,10 +1465,12 @@ html {
   .start .start-client:nth-of-type(4) {
     order: 1;
   }
-
+}
+@media all and (max-width: 880px) {
   .google-container {
     position: unset;
     margin-top: 30px;
+    z-index: unset;
   }
   .google-container h2 {
     font-size: 1.7142857143rem;
@@ -1505,10 +1522,11 @@ html {
     z-index: 10;
     margin-top: -10px;
   }
-
+}
+@media all and (max-width: 880px) {
   .advantages {
     background-image: url(../images/advantages/background-devise.jpg);
-    background-position: left -100px top;
+    background-position: center top;
     height: 1820px;
     padding-top: 35px;
     padding-bottom: 20px;
@@ -1532,13 +1550,20 @@ html {
   .advantages .advantages-info:nth-of-type(n+3) + .advantages-info {
     margin-top: unset;
   }
-
+}
+@media all and (max-width: 880px) {
   .workouts-and-reviews-background {
     background-image: url(../images/background_workouts-and-reviews_devise.jpg);
     background-position: top right;
     padding-top: 70px;
   }
-
+}
+@media all and (max-width: 1230px) {
+  .workouts-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 880px) {
   .workouts {
     padding-bottom: 30px;
   }
@@ -1632,6 +1657,8 @@ html {
     margin-top: 30px;
     margin-right: unset;
   }
+}
+@media all and (max-width: 880px) {
   .reviews {
     width: 290px;
     padding-top: 30px;
@@ -1642,7 +1669,16 @@ html {
     width: 290px;
     margin-bottom: 55px;
   }
-
+}
+@media all and (max-width: 1260px) {
+  .reviews-photo {
+    width: 780px;
+  }
+}
+@media all and (max-width: 880px) {
+  .reviews-photo {
+    width: 290px;
+  }
   .reviews-photo-slider {
     position: relative;
   }
@@ -1678,7 +1714,18 @@ html {
   .reviews-photo .reviews-photo-append-dots {
     display: none;
   }
-
+}
+@media all and (max-width: 1500px) {
+  .reviews-review-container .reviews-review-slide:nth-of-type(n+4) {
+    display: none;
+  }
+}
+@media all and (max-width: 1000px) {
+  .reviews-review-container .reviews-review-slide:nth-of-type(n+3) {
+    display: none;
+  }
+}
+@media all and (max-width: 880px) {
   .reviews-review-container {
     flex-flow: column nowrap;
   }
@@ -1687,6 +1734,9 @@ html {
     width: 270px;
     box-shadow: 0px 15px 70px 0px rgba(73, 73, 73, 0.1);
     border-radius: 10px;
+  }
+  .reviews-review-container .reviews-review-slide:nth-of-type(n+4) {
+    display: block;
   }
   .reviews-review-container .reviews-review-append-dots {
     height: 30px;
@@ -1793,7 +1843,8 @@ html {
     background-repeat: no-repeat;
     flex-shrink: 0;
   }
-
+}
+@media all and (max-width: 880px) {
   .how-it-works {
     background-image: unset;
     padding-top: 30px;
@@ -1827,7 +1878,18 @@ html {
     text-align: center;
     width: 300px;
   }
+}
+@media all and (max-width: 1260px) {
+  .pricing-cards {
+    flex-flow: column nowrap;
+  }
 
+  .pricing .pricing-card + .pricing-card {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 880px) {
   .pricing {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1852,16 +1914,37 @@ html {
     margin-left: unset;
     margin-top: 20px;
   }
-
+}
+@media all and (max-width: 1230px) {
+  .begin .begin-cards {
+    width: 876px;
+  }
+}
+@media all and (max-width: 880px) {
   .begin {
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+  .begin .begin-cards {
+    width: 584px;
   }
   .begin h1 {
     font-size: 2.4285714286rem;
     text-align: center;
     margin-bottom: 30px;
   }
+}
+@media all and (max-width: 615px) {
+  .begin .begin-cards {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1230px) {
+  .contact-container {
+    margin-left: 15px;
+  }
+}
+@media all and (max-width: 880px) {
   .contact {
     padding-top: 5px;
     padding-bottom: 95px;
@@ -1879,15 +1962,17 @@ html {
     z-index: 10;
   }
   .contact-container {
+    align-items: flex-start;
     background-image: url(../images/contact-form/background_devise.jpg);
     background-repeat: no-repeat;
     background-position: right top 132px;
-    width: 290px;
+    width: 584px;
     height: 730px;
-    padding: 35px 20px 25px;
+    padding: 35px 40px 25px;
   }
   .contact-form {
     width: 100%;
+    max-width: 360px;
   }
   .contact-form h1 {
     font-size: 2.4285714286rem;
@@ -1901,9 +1986,12 @@ html {
     width: 170px;
     margin-bottom: 25px;
   }
+  .contact-form-inputs {
+    flex-flow: column nowrap;
+  }
   .contact-form-inputs-text {
     font-size: 1rem;
-    width: 245px;
+    width: 100%;
   }
   .contact-form-inputs-text::placeholder {
     font-size: 1rem;
@@ -1945,12 +2033,23 @@ html {
   .contact-form .personal-data .personal-data-input:checked + .personal-data-label {
     background-image: url(../images/contact-form/checkbox-checked.png);
   }
-
+}
+@media all and (max-width: 615px) {
+  .contact-container {
+    width: 290px;
+    padding: 35px 20px 25px;
+  }
+}
+@media all and (max-width: 880px) {
   .footer:after {
     content: unset;
   }
   .footer-container {
     height: 95px;
+    width: 100%;
+    max-width: 584px;
+    min-width: 290px;
+    padding: 0 15px;
   }
   .footer .site-logo-container {
     align-items: center;

@@ -1,16 +1,14 @@
-.reviews {
-  //background-color: $background-primary;
-  width: 290px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-
-  h1 {
-    @include fontSize(34);
+@media all and (max-width: 880px) {
+  .reviews {
     width: 290px;
-    //font-family: $berlingske-serif-lt;
-    //color: $color-phone;
-    //text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
 
-    margin-bottom: 55px;
+    h1 {
+      @include fontSize(34);
+      width: 290px;
+
+      margin-bottom: 55px;
+    }
   }
 }

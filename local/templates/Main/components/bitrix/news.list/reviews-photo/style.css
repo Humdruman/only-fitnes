@@ -1,0 +1,202 @@
+
+.reviews-photo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 65px;
+    margin-top: 50px;
+    max-width: 1243px;
+}
+
+@media screen and (max-width: 1327px){
+    .reviews-photo {
+        max-width: 1160px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .reviews-photo {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .reviews-photo {
+        max-width: 880px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .reviews-photo {
+        width: 100%;
+    }
+}
+
+.reviews-photo-title {
+    font-size: 4.5714285714rem;
+    font-family: "Berlingske-Serif-Lt", serif;
+    color: #242011;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+@media screen and (max-width: 760px){
+    .reviews-photo-title {
+        font-size: 2.4285714286rem;
+        margin-bottom: 55px;
+    }
+}
+
+.reviews-photo-slider {
+    position: relative;
+}
+
+.reviews-photo-slider-photo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 380px;
+    height: 295px;
+    border-radius: 15px;
+}
+
+.reviews-photo-slider-photo-img {
+    display: inline-block!important;
+}
+
+@media screen and (max-width: 1250px) {
+    .reviews-photo-slider-photo {
+        text-align: center;
+    }
+}
+
+
+.reviews-photo-slider .slick-arrow {
+    font-size: 0;
+    position: absolute;
+    top: 110px;
+    width: 78px;
+    height: 78px;
+    border-radius: 39px;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.reviews-photo-slider .slick-arrow.slick-prev {
+    background-image: url(./images/slider-prev.png);
+    left: -38px;
+}
+
+@media screen and (max-width: 1250px){
+    .reviews-photo-slider .slick-arrow.slick-prev {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .reviews-photo-slider .slick-arrow.slick-prev {
+        background-image: url(./images/slider-prev_devise.png);
+        left: 25px;
+    }
+}
+
+.reviews-photo-slider .slick-arrow.slick-next {
+    background-image: url(./images/slider-next.png);
+    right: -38px;
+}
+@media screen and (max-width: 1250px){
+    .reviews-photo-slider .slick-arrow.slick-next {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .reviews-photo-slider .slick-arrow.slick-next {
+        background-image: url(./images/slider-next_devise.png);
+        right: 25px;
+    }
+}
+
+
+.reviews-photo .reviews-photo-append-dots {
+    margin: 50px 0;
+    height: 30px;
+}
+
+.reviews-photo .reviews-photo-append-dots ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-photo .reviews-photo-append-dots li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.reviews-photo .reviews-photo-append-dots li.slick-active {
+    cursor: default;
+}
+
+.reviews-photo .reviews-photo-append-dots li + li {
+    margin-left: 10px;
+}
+
+.reviews-photo .reviews-photo-append-dots button {
+    font-size: 0;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    border: none;
+    background-image: url(./images/slider-btn.png);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.reviews-photo .reviews-photo-append-dots li.slick-active button {
+    width: 10px;
+    height: 10px;
+    background-image: url(./images/slider-btn-active.png);
+}
+
+
+@media screen and (max-width: 760px){
+    .reviews-photo-slider-photo {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 290px;
+        height: 225px;
+        border-radius: 15px;
+    }
+
+    .reviews-photo-slider .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        top: 85px;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+
+    .reviews-photo .reviews-photo-append-dots {
+        display: none;
+    }
+
+    .reviews-review-container {
+        flex-flow: column nowrap;
+    }
+}

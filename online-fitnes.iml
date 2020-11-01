@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/frontend/app/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/frontend/app/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/container-interop/container-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/php-di/invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/php-di/php-di" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/php-di/phpdoc-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/local/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/mishp1" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/rx" level="application" />
+    <orderEntry type="library" name="bx-vue" level="project" />
+  </component>
+</module>

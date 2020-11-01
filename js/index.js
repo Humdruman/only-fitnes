@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
-      appendDots: $('.main-append-dots'),
+      appendDots: $('.interactive_slider'),
     });
   
     $('.reviews-photo-slider').slick({
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        appendDots: $('.main-append-dots'),
+        appendDots: $('.interactive_slider'),
       });
       
       $('.workouts-cards').slick('unslick');

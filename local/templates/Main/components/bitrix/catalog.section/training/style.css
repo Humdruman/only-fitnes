@@ -1,0 +1,272 @@
+.workouts-and-reviews-background {
+    background-image: url(./images/background_workouts-and-reviews.jpg);
+    background-position: top center;
+    background-color: #fff;
+    flex-flow: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.workouts-and-reviews-background.no-bg {
+    background: none;
+}
+
+.workouts {
+    display: flex;
+    align-items: center;
+    padding: 0 15px 147px 15px;
+    margin: 0 15px;
+    width: 100%!important;
+}
+.workouts h1 {
+    font-size: 4.5714285714rem;
+    font-family: "Berlingske-Serif-Lt", serif;
+    color: #242011;
+    margin-bottom: 45px;
+}
+.workouts-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.workouts-card {
+    position: relative;
+    width: 380px;
+    align-items: center;
+}
+.workouts-card-img-container {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.workouts-card-img {
+    width: 100%;
+    height: 100%;
+}
+.workouts-card-img-container .info {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7142857143rem;
+    font-family: "Gotham-Pro-Medium", sans-serif;
+    color: #fafafa;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px;
+    width: max-content;
+}
+
+@media screen and (max-width: 880px) {
+    .workouts-card-img-container .info {
+        top: 30px;
+        left: 30px;
+    }
+}
+
+.workouts-card h2 {
+    font-size: 1.7142857143rem;
+    text-align: center;
+    font-family: "Berlingske-Serif-Lt", serif;
+    color: #242011;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+.workouts-card-price {
+    font-size: 1.1428571429rem;
+    font-family: "Gotham-Pro-Light", sans-serif;
+    color: #a6abb0;
+    padding-left: 30px;
+    background-image: url(./images/rub.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 20px;
+    margin-bottom: 20px;
+}
+.workouts-card-links {
+    align-items: center;
+}
+
+@media screen and (max-width: 880px) {
+    .workouts-card-links {
+        flex-flow: column nowrap!important;
+    }
+}
+.workouts-card-links .about {
+    font-size: 0.8571428571rem;
+    cursor: pointer;
+    font-family: "Gotham-Pro-Bold", sans-serif;
+    color: #fbd121;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #fbd121;
+    margin-right: 30px;
+}
+
+.about:hover {
+    border-bottom: 1px solid #fbd121
+}
+
+.about_modal {
+    bottom: 60px;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #fbce10;
+    border-radius: 20px;
+    background: white;
+    z-index: 20;
+}
+
+@media screen and (max-width: 880px) {
+    .about_modal {
+        bottom: 20px;
+    }
+}
+
+
+.workouts-card-links .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: -moz-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    background-image: -webkit-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    background-image: -ms-linear-gradient(90deg, #fbce10 0%, #fee176 100%);
+    box-shadow: 0px 25px 50px 0px rgba(236, 201, 16, 0.15), 0px 2px 0px 0px rgba(236, 201, 16, 0.004), inset 0px 6px 17px 0px rgba(255, 255, 255, 0.25);
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 30px;
+    font-size: 0.7142857143rem;
+    font-family: "Gotham-Pro-Bold", sans-serif;
+    color: #101010;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.more:hover {
+    padding: 0 29px;
+    border: 1px solid #f4a4cc;
+}
+
+
+
+
+@media all and (max-width: 880px) {
+    .workouts-and-reviews-background {
+        background-image: url(./images/background_workouts-and-reviews_devise.jpg);
+        background-position: top right;
+        padding-top: 60px;
+    }
+    .workouts-and-reviews-background.pt-0 {
+        padding-top: 0;
+    }
+}
+@media all and (max-width: 1230px) {
+    .workouts-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: 880px) {
+    .workouts {
+        padding-bottom: 30px;
+    }
+    .workouts h1 {
+        font-size: 2.4285714286rem;
+        width: 290px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .workouts-cards {
+        position: relative;
+        display: block;
+        grid-template-columns: unset;
+        grid-gap: unset;
+        width: 290px;
+    }
+    .workouts-cards .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        top: 162px;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .workouts-cards .slick-arrow.slick-prev {
+        background-image: url(./images/slider-prev_devise.png);
+        left: -14px;
+    }
+    .workouts-cards .slick-arrow.slick-next {
+        background-image: url(./images/slider-next_devise.png);
+        right: -14px;
+    }
+    .workouts .workouts-append-dots {
+        height: 30px;
+        margin-top: 60px;
+    }
+    .workouts .workouts-append-dots ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .workouts .workouts-append-dots li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .workouts .workouts-append-dots li.slick-active {
+        cursor: default;
+    }
+    .workouts .workouts-append-dots li + li {
+        margin-left: 10px;
+    }
+    .workouts .workouts-append-dots button {
+        font-size: 0;
+        list-style: none;
+        width: 6px;
+        height: 6px;
+        border: none;
+        background-image: url(./images/slider-btn.png);
+        background-color: transparent;
+        background-size: cover;
+    }
+    .workouts .workouts-append-dots li.slick-active button {
+        width: 10px;
+        height: 10px;
+        background-image: url(./images/slider-btn-active.png);
+    }
+    .workouts-card {
+        width: 290px;
+        align-items: center;
+    }
+    .workouts-card-img-container {
+        width: 290px;
+        padding: 15px;
+    }
+    .workouts-card-links {
+        flex-flow: column nowrap;
+    }
+    .workouts-card-links .about {
+        order: 1;
+        margin-top: 30px;
+        margin-right: unset;
+    }
+}

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 760) {
+  if (window.innerWidth > 880) {
   } else {
     $('.reviews-review-slider').slick({
       infinite: true,
@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
+  let windowWidth = window.innerWidth;
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) {
+    if (windowWidth <= 880 && window.innerWidth > 880) {
       $('.reviews-review-slider').slick('unslick');
-    } else {
+    } else if (windowWidth > 880 && window.innerWidth <= 880) {
       $('.reviews-review-slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -24,5 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         arrows: false
       });
     }
+    windowWidth = window.innerWidth;
   })
 })

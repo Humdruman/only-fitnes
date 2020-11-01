@@ -1,26 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 760) {
-    $('.main-slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      appendDots: $('.main-append-dots'),
-    });
-    
-  }
+  $('.main-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    appendDots: $('.interactive_slider'),
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: 'unslick'
+      }
+    ]
+  });
   
+  let windowWidth = window.innerWidth;
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) {
+    if (windowWidth <= 1440 && window.innerWidth > 1440) {
       $('.main-slider').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
-        appendDots: $('.main-append-dots'),
+        appendDots: $('.interactive_slider'),
+        responsive: [
+          {
+            breakpoint: 1440,
+            settings: 'unslick'
+          }
+        ]
       });
-    } else {
-      $('.main-slider').slick('unslick');
     }
+    windowWidth = window.innerWidth;
   })
 })
