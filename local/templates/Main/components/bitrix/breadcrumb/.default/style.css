@@ -1,0 +1,40 @@
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 15px;
+    padding: 0 15px;
+    width: 1200px;
+    font-size: 14px;
+    font-family: "Gotham Pro", sans-serif;
+}
+
+
+
+
+.bx-breadcrumb {
+	margin: 10px 0;
+}
+.bx-breadcrumb i {
+	color: #b5bdc2;
+	line-height: 13px;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.breadcrumb .bx-breadcrumb-item {
+	margin-bottom: 10px;
+	white-space: nowrap;
+    color: #7c7c7c;
+	line-height: 13px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.breadcrumb  .bx-breadcrumb-item span {
+    color: #7c7c7c;
+	white-space: normal;
+}
+.breadcrumb .bx-breadcrumb-item a {
+    text-decoration: underline;
+}
+.bx-breadcrumb .bx-breadcrumb-item a:hover {}

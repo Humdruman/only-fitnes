@@ -37,7 +37,6 @@ Vue::includeComponent(['AppModal', 'ModalForm']);
 <div id="app-vue">
     <div class="app-template">
         <app-modal></app-modal>
-
         <header class="l-header">
             <?php
             $APPLICATION->IncludeComponent(
@@ -98,3 +97,14 @@ Vue::includeComponent(['AppModal', 'ModalForm']);
             </div>
 
         </header>
+        <?php
+        $APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            "",
+            [
+                "START_FROM" => "0",
+                "PATH" => "",
+                "SITE_ID" => "s1"
+            ]
+        ); ?>
+
