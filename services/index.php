@@ -5,6 +5,8 @@ global $APPLICATION;
 
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 
+$APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
+
 $request = Application::getInstance()->getContext()->getRequest();
 
 $APPLICATION->IncludeComponent(

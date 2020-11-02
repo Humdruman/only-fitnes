@@ -795,4 +795,23 @@ a[href^="mailto"]{
     }
 }
 
+.test_banner {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 151px;
+    box-shadow: 0 10px 56px 14px rgba(40, 40, 40, 0.05);
+    border-radius: 20px;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 32px;
+    color: #242011;
+}
+
+
+@media screen and (max-width: 760px) {
+    .test_banner {
+        width: 100%;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */

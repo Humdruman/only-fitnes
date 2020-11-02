@@ -26,8 +26,8 @@
         </div>
     </div>
     <a href="" class="link-text">Кураторы</a>
-    <a href="" class="link-text">Стоимость</a>
+    <a href="/prices/" class="link-text">Стоимость</a>
     <a href="" class="link-text">Статьи</a>
-    <a href="" class="link-text">FAQ</a>
+    <a href="/faq/" class="link-text">FAQ</a>
     <a href="" class="link-text">Отзывы</a>
 </div>
