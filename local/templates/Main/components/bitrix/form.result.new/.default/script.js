@@ -7,16 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const data = new FormData(form)
-        BX.ajax.post(
-            '/ajax/form.php',
-            {
-                'name': data.get('form_text_1'),
-                'phone': data.get('form_text_2'),
-                'form_id': data.get('WEB_FORM_ID')
-            },
-            (response) => {
-                console.log(response)
-            }
-        )
+        window.buex.dispatch('sendFeedbackForm', {
+            name: data.get('form_text_1'),
+            phone: data.get('form_text_2')
+        })
     })
 });
