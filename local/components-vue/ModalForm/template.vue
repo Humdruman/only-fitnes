@@ -52,6 +52,12 @@
                 close() {
                     this.$store.commit('setShowModal', false);
                 }
+            },
+            mounted () {
+                if($) {
+                    $('.modal_form .phone').mask("8(999) 999-9999");
+                }
+
             }
         }
     )
