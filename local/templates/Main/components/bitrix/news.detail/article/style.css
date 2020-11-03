@@ -1,0 +1,32 @@
+.article  {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 760px){
+    .article {
+        flex-direction: column;
+    }
+}
+
+.article-text_wrap {
+    margin-left: 30px;
+}
+.article-title {
+    color: #242011;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.article-text {
+    color: #7c7c7c;
+    font-family: "Gotham-Pro-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}

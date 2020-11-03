@@ -27,7 +27,6 @@ for($index = 0; $index < $itemSize; $index++)
 	{
 		$strReturn .= '
 			<div class="bx-breadcrumb-item" id="bx_breadcrumb_'.$index.'" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-				'.$arrow.'
 				<a href="'.$arResult[$index]["LINK"].'" title="'.$title.'" itemprop="item">
 					<span itemprop="name">'.$title.'</span>
 				</a>

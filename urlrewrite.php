@@ -30,5 +30,12 @@ $arUrlRewrite = array(
         'ID' => '',
         'PATH' => '/services/index.php',
         'SORT' => 200
+    ],
+    [
+        'CONDITION' => '#^/articles/([0-9]+)/(\\?(.*))?#',
+        'RULE' => 'ELEMENT_ID=$1',
+        'ID' => '',
+        'PATH' => '/articles/detail/index.php',
+        'SORT' => 200
     ]
 );
