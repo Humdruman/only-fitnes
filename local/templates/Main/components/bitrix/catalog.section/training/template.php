@@ -1,11 +1,16 @@
 <?php
-/** @var array $arResult */
+/** @var array $arResult
+ * @var array $arParams
+ *
+ */
 ?>
 
 
 <section class="workouts-and-reviews-background section">
     <div class="workouts section-flex-col">
-        <h1>Популяроные тренировки</h1>
+        <?php if (!$arParams['DONT_SHOW_TITLE']) { ?>
+            <h1>Популяроные тренировки</h1>
+        <?php } ?>
         <div class="workouts-cards">
             <?php foreach ($arResult['ITEMS'] as $item) { ?>
                 <div class="workout-slide">

@@ -5,6 +5,7 @@
     flex-flow: column;
     align-items: center;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
 }
 .workouts-and-reviews-background.no-bg {
     background: none;
