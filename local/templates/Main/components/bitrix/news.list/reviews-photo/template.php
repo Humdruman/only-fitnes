@@ -1,14 +1,16 @@
 <?php
 /**
  * @var array $arResult;
- *
+ * @var array $arParams
  */
 
 ?>
 
 <div class="section">
         <div class="reviews-photo fl-col">
-            <h1 class="reviews-photo-title">Результаты и отзывы<br> наших клиенток</h1>
+            <?php if(!$arParams['DONT_SHOW_TITLE']) { ?>
+                <h1 class="reviews-photo-title">Результаты и отзывы<br> наших клиенток</h1>    
+            <?php }?>
             <div class="slider-container">
                 <div class="reviews-photo-slider">
                     <?php foreach ($arResult['ITEMS'] as $item) { ?>

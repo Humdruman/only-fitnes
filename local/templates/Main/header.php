@@ -33,7 +33,7 @@ Vue::includeComponent(['AppModal', 'ModalForm']);
     <?php $APPLICATION->ShowHead() ?>
     <?php $APPLICATION->ShowPanel() ?>
 </head>
-<body>
+<body data-theme="#BODY_THEME#">
 <div id="app-vue">
     <div class="app-template">
         <app-modal></app-modal>

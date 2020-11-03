@@ -1,0 +1,77 @@
+.reviews_text {
+    margin-top: 40px;
+    width: 1200px;
+}
+
+@media screen and (max-width: 1220px){
+    .reviews_text {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1005px){
+    .reviews_text {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .reviews_text {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.reviews_text-title {
+    width: 100%;
+    color: #242011;
+    font-weight: 400;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 72px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 810px){
+    .reviews_text-title {
+        font-size: 42px;
+    }
+}
+
+
+.reviews_text-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.reviews_text-item {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    background-color: #ffffff;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+@media screen and (max-width: 810px){
+    .reviews_text-item  {
+        width: 100%;
+    }
+}
+
+.reviews_text-name {
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #242012;
+}
+
+.reviews_text-detail {
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 14px;
+    color: #7c7c7c;
+}

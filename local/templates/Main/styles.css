@@ -40,6 +40,14 @@
     outline: none;
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
+body[data-theme='white'] {
+    background: #fdfdfd;
+}
+
 h1, h2 {
     font-weight: normal;
 }
@@ -550,7 +558,7 @@ a[href^="mailto"]{
 .footer-instagram {
     background-image: url(./images/header/instagram.png);
     width: 60px;
-    height: 60px;
+    height: 50px;
     border-radius: 30px;
     background-size: cover;
     margin: 0 30px;

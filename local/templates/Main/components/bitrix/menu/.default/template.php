@@ -5,5 +5,5 @@
     <a href="/prices/" class="link-text">Стоимость</a>
     <a href="" class="link-text">Статьи</a>
     <a href="/faq/" class="link-text">FAQ</a>
-    <a href="" class="link-text">Отзывы</a>
+    <a href="/reviews/" class="link-text">Отзывы</a>
 </div>

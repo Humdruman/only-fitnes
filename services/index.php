@@ -5,6 +5,9 @@ global $APPLICATION;
 
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 
+$content = \App\Services\ContentService::getInstance();
+$content->setBodyTheme('white');
+
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 
 $request = Application::getInstance()->getContext()->getRequest();

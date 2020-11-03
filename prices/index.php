@@ -1,5 +1,7 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
+$content = \App\Services\ContentService::getInstance();
+$content->setBodyTheme('white');
 ?>
 
 <?php

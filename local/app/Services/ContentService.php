@@ -17,23 +17,25 @@ class ContentService
 
     public function getSiteSettingValue($code): string
     {
-        if(!empty($this->siteSettingCache[$code])) {
-            return  $this->siteSettingCache[$code];
+        if (!empty($this->siteSettingCache[$code])) {
+            return $this->siteSettingCache[$code];
         }
         $result = SiteInfoTable::getByCode($code);
-        if(isset($result['value'])) {
+        if (isset($result['value'])) {
             $this->siteSettingCache[$code] = $result['value'];
-            return  $this->siteSettingCache[$code];
+            return $this->siteSettingCache[$code];
         }
         return '';
     }
 
-    public function check(): void {
-        AddEventHandler('main', 'OnEndBufferContent', [$this, 'getAll']);
-    }
-
-    public function getAll(&$content) {
-        $content = str_replace('</body>', 'text</body>', $content);
+    public function setBodyTheme(string $theme): void
+    {
+        AddEventHandler(
+            'main',
+            'OnEndBufferContent',
+            static function (&$content) use ($theme) {
+                $content = str_replace('#BODY_THEME#', $theme, $content);
+            });
     }
 
 
