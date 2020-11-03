@@ -1,0 +1,99 @@
+@media screen and (max-width: 760px) {
+    .articles {
+        width: 100%!important;
+    }
+}
+
+
+.articles-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 20px;
+    padding: 19px;
+}
+
+@media screen and (max-width: 760px) {
+    .articles-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.articles-item_img_container {
+    width: 350px;
+    height: 349px;
+    border-radius: 10px;
+}
+
+.articles-item_img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 420px){
+    .articles-item_img_container {
+        width: 100%;
+    }
+}
+
+.articles-item_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 760px) {
+    .articles-item_text_container {
+        margin-top: 20px;
+        margin-left: 0;
+        align-items: center;
+    }
+}
+
+.articles-item_title {
+    color: #242011;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.articles-item_text {
+    color: #7c7c7c;
+    font-family: "Gotham-Pro-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 760px) {
+    .articles-item_text {
+        text-align: center;
+        margin: 15px 0;
+    }
+}
+
+.articles-item_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 298px;
+    height: 86px;
+    box-shadow: 0 3px 0 #e3b600, 0 25px 50px rgba(255, 231, 145, 0.15), inset 0 6px 17px rgba(255, 255, 255, 0.25);
+    border-radius: 43px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to top, #f9bb02 0%, #ffd453 99%, #ffd453 100%);
+    font-family: "Gotham-Pro-Bold", sans-serif;
+    color: #312c17;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
