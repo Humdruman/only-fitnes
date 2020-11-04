@@ -8,7 +8,7 @@
 
 <section class="contact section">
     <div  class="contact-success section-flex-col" v-if="$store.getters.isSubmittedFeedback">
-        <h1 class="contact-success_text">Ваша заявка успешно отправлена!</h1>
+        <feedback-message class="contact-success_text"></feedback-message>
     </div>
     <div class="contact-container section-flex-col" v-if="!$store.getters.isSubmittedFeedback">
 

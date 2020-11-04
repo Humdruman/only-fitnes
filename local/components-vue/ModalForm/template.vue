@@ -4,7 +4,7 @@
             <span class="modal_form-close" @click="close()">x</span>
         </div>
         <div class="modal_form-success" v-if="isSubmitted">
-            <h1 class="modal_form-success-title">Ваша заявка успешно отправлена!</h1>
+            <feedback-message class="modal_form-success-title"></feedback-message>
         </div>
         <form  class="modal_form-form contact-form" @submit.prevent="send($event)" v-if="!isSubmitted">
             <h1 class="modal_form-title">Оставь заявку</h1>

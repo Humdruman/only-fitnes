@@ -9,7 +9,7 @@ global $APPLICATION;
 $asset = Asset::getInstance();
 $content = ContentService::getInstance();
 CUtil::InitJSCore(['rxjs', 'jquery3', 'ui.vue', 'ui.vue.vuex']);
-Vue::includeComponent(['AppModal', 'ModalForm']);
+Vue::includeComponent(['AppModal', 'ModalForm', 'FeedbackMessage']);
 
 ?>
 
