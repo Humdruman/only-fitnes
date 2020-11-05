@@ -364,6 +364,7 @@
 }
 
 .interactive_slider-dots {
+    display: none;
     margin-top: 110px;
     height: 30px;
     position: relative;

@@ -36,6 +36,22 @@ Vue::includeComponent(['AppModal', 'ModalForm', 'FeedbackMessage']);
 <body data-theme="#BODY_THEME#">
 <div id="app-vue">
     <div class="app-template">
+        <div class="mobile_menu">
+            <div class="mobile_menu-close-btn"
+                 @click="$('.mobile_menu').removeClass('open'); $('body').css('overflow', 'auto');">
+
+            </div>
+            <nav class="mobile_menu-nav">
+                <ul class="mobile_menu-ul">
+                    <li><a href="/courses/">Курсы</a></li>
+                    <li><a href="/testing/">Тесты</a></li>
+                    <li><a href="/prices/">Стоимость</a></li>
+                    <li><a href="/articles/">Статьи</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/reviews/">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
         <app-modal></app-modal>
         <header class="l-header">
             <?php
@@ -55,7 +71,9 @@ Vue::includeComponent(['AppModal', 'ModalForm', 'FeedbackMessage']);
                     <div class="site_logo-title">
                         <span class="site_logo-icon_online"></span>Онлайн<br>фитнес-школа
                     </div>
-                    <div class="devise_show"></div>
+                        <div class="devise_show"
+                             @click="$('.mobile_menu').addClass('open'); $('body').css('overflow', 'hidden');">
+                        </div>
                 </div>
                 <div class="feedback">
                     <div class="feedback-contact l-fl-col">

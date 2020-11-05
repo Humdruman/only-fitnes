@@ -3,7 +3,7 @@
  * @var $templateFolder
  */
 
-$count = 3;
+$count = 1;
 
 ?>
 <section class="interactive_slider">
@@ -23,18 +23,17 @@ $count = 3;
                         <h1>Кто ещё хочет сексуальное тело?</h1>
                         <div class="workouts-card-links fl-row">
                             <div class="start-test-img"></div>
-                            <p class="start-test-description">Пройдите <span class="pink"> бесплатный тест </span> и за 5 минут
-                                узнайте, с помощью какого тренинга эффект
-                                от ваших занятий увеличится в 3 раза?</p>
+                            <p class="start-test-description">Пройдите <span class="pink">бесплатный онлайн-тест</span> и узнайте, какой тренинг
+                                поможет получить сексуальную фигуру в 3 раза быстрее. Время прохождения теста – 5 минут.</p>
                         </div>
-                        <a href="" class="start-test-button">начать прохождение теста</a>
+                        <a href="/testing/" class="start-test-button">начать прохождение теста</a>
                     </div>
                     <div class="start-clients">
                         <h2>С НАМИ УЖЕ<br>ЗАНИМАЮТСЯ</h2>
                         <div class="start-clients-container">
                             <div class="start-client fl-col">
                                 <div class="start-client-img img-1"></div>
-                                <div class="start-client-name">Ольна Бузова</div>
+                                <div class="start-client-name">Ольга Бузова</div>
                             </div>
                             <div class="start-client fl-col">
                                 <div class="start-client-img img-2"></div>

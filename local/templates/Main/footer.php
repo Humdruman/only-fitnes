@@ -10,7 +10,8 @@ $content = ContentService::getInstance();
         <div class="site-logo-container fl-row">
             <a class="site-logo" href="/"></a>
             <div class="footer-title"><span class="online"></span>Онлайн<br>фитнес-школа</div>
-            <div class="footer-devise-show"></div>
+            <div class="footer-devise-show"
+                 @click="$('.mobile_menu').addClass('open'); $('body').css('overflow', 'hidden');"></div>
         </div>
         <div class="fl-row">
             <div class="fl-col">

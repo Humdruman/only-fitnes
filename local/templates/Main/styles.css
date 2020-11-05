@@ -82,6 +82,19 @@ a[href^="mailto"]{
     width: 100%;
 }
 
+.l-flexible {
+    max-width: 1171px;
+    width: 1171px;
+}
+
+@media screen and (max-width: 1200px){
+    .l-flexible {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+
 .fl-row, .feedback, .site_logo {
     display: flex;
     flex-flow: row nowrap;
@@ -819,7 +832,190 @@ a[href^="mailto"]{
 @media screen and (max-width: 760px) {
     .test_banner {
         width: 100%;
+        text-align: center;
     }
 }
+
+
+@media screen and (max-width: 1200px){
+    .test_form {
+        padding: 0 15px;
+    }
+}
+
+
+.test_form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1000px){
+    .test_form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .test_form-row .text_input {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+.checkbox-row {
+    margin-top: 18px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.checkbox-row-title {
+    color: #242011;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    padding-top: 40px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 41px;
+}
+
+.checkbox-row .checkbox_input {
+    border-top: 1px solid #f0f0f0;
+}
+
+.test_form-submit-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 69px;
+}
+
+@media screen and (max-width: 700px){
+    .test_form-submit-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.test_form-submit-title {
+    color: #242011;
+    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 700px){
+    .test_form-submit-title {
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 32px;
+    }
+}
+
+.test_form-submit_button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 369px;
+    height: 86px;
+    box-shadow: 0 3px 0 #e3b600, 0 25px 50px rgba(255, 231, 145, 0.15), inset 0 6px 17px rgba(255, 255, 255, 0.25);
+    border-radius: 43px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to top, #f9bb02 0%, #ffd453 99%, #ffd453 100%);
+    color: #312c17;
+    font-family: "Gotham-Pro-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 400px) {
+    .test_form-submit_button {
+        width: 100%;
+    }
+}
+
+.devise_show {
+    display: none;
+    background-image: url(./images/media/header-show.png);
+    background-size: contain;
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .devise_show {
+        display: block;
+    }
+}
+
+.mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    max-width: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-width 0.5s;
+    height: 100%;
+    background: white;
+    z-index: 100;
+}
+
+.mobile_menu.open {
+    max-width: 800px;
+}
+
+.mobile_menu-close-btn {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 35px 35px 0 0;
+    background-image: url("images/close_mobile.png");
+}
+
+.mobile_menu-ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.mobile_menu-ul li {
+    width: 70%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.mobile_menu-ul a {
+    font-family: 'Berlingske-Serif-Lt', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.mobile_menu-ul a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 10px;
+    border-radius: 40px;
+    background: #F8ADD4;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

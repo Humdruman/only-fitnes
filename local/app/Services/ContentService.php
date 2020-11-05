@@ -28,6 +28,16 @@ class ContentService
         return '';
     }
 
+    public function offBreadcrumb(): void {
+        global $APPLICATION;
+        $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
+    }
+
+    public function setPageTitle(?string $title) {
+        global $APPLICATION;
+        $APPLICATION->SetTitle($title);
+    }
+
     public function setBodyTheme(string $theme): void
     {
         AddEventHandler(

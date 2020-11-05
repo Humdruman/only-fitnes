@@ -9,7 +9,7 @@
 <section class="workouts-and-reviews-background section">
     <div class="workouts section-flex-col">
         <?php if (!$arParams['DONT_SHOW_TITLE']) { ?>
-            <h1>Популяроные тренировки</h1>
+            <h1>Популярные тренировки</h1>
         <?php } ?>
         <div class="workouts-cards">
             <?php foreach ($arResult['ITEMS'] as $item) { ?>

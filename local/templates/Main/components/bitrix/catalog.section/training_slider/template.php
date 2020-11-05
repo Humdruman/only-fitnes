@@ -14,7 +14,7 @@
                 <div class="detail_course-slider-slide-content">
                     <h1><?= $item['NAME']; ?></h1>
                     <p>Подойдет ли тебе данный тренинг?</p>
-                    <a href="" class="btn">Пройти тест</a>
+                    <a href="/testing/" class="btn">Пройти тест</a>
                 </div>
             </div>
         <?php } ?>

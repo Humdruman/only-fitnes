@@ -4,27 +4,9 @@ $content = \App\Services\ContentService::getInstance();
 $content->setBodyTheme('white');
 ?>
 
-<?php
-$APPLICATION->SetTitle('Стоимость обучения');
-?>
-<?php
-$APPLICATION->IncludeComponent(
-    'humdruman:model.view',
-    'title',
-    [
-        'model' => \App\Model\Result\EmptyModel::class
-    ]
-)
-
-?>
-    <style>
-        body {
-            background-color: #f1f1f1;
-        }
-    </style>
     <div class="section">
         <div class="section-flex-col test_banner">
-            Тест на 3 дня беслпатно
+            Тест на 3 дня бесплатно
         </div>
     </div>
 
