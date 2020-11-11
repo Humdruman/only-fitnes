@@ -293,7 +293,7 @@ $APPLICATION->IncludeComponent(
         "DISPLAY_PREVIEW_TEXT" => "Y",
         "AJAX_MODE" => "Y",
         "IBLOCK_TYPE" => "",
-        "IBLOCK_ID" => "",
+        "IBLOCK_ID" => "5",
         "NEWS_COUNT" => "20",
         "SORT_BY1" => "ACTIVE_FROM",
         "SORT_ORDER1" => "DESC",

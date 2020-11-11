@@ -33,6 +33,11 @@
     src: url("./fonts/Berlingske/BerlingskeSerif-LT.ttf");
 }
 
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("./fonts/mariad_pro/font.otf");
+}
+
 * {
     margin: 0;
     padding: 0;

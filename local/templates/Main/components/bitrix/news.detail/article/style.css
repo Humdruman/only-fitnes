@@ -4,29 +4,133 @@
     padding: 20px;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+
+.article-begin {
+    display: flex;
     flex-direction: row;
 }
 
 @media screen and (max-width: 760px){
-    .article {
+    .article-begin {
         flex-direction: column;
     }
+}
+
+.article-detail {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+.article-detail a {
+    color: #f6cbe1;
+}
+
+
+.article-detail h2 {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.article-detail ol, ul {
+    font-size: 16px;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.article-detail ol {
+    counter-reset: li;
+}
+
+.article-detail ol li {
+    counter-increment: li
+}
+
+.article-detail ol li:before {
+    content: counter(li)'.';
+    color: #f6cbe1;
+    width: 1em;
+    margin-left: -1em
+}
+
+
+
+
+.article-detail ul li:before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    background: #f6cbe1;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.article-detail li {
+    line-height: 24px;
+    padding: 15px 0;
+    margin-left: 10px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.article-detail li:before {
+    font-size: 1.2em;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 760px){
+    .article {
+
+    }
+}
+
+.article-container_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .article-text_wrap {
     margin-left: 30px;
 }
+
+@media screen and (max-width: 760px) {
+    .article-text_wrap {
+        margin-left: 0;
+    }
+}
 .article-title {
     color: #242011;
-    font-family: "Berlingske-Serif-Lt", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 760px){
+    .article-title {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article-title {
+        font-size: 28px;
+    }
+}
+
 .article-text {
     color: #7c7c7c;
-    font-family: "Gotham-Pro-Regular", sans-serif;
+    font-family: "Myriad Pro", sans-serif;
     font-size: 16px;
     font-weight: 300;
 }

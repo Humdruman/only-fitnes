@@ -7,6 +7,12 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 760px){
+    .articles_list-container {
+        justify-content: center;
+    }
+}
+
 .articles_list-title {
     width: 100%;
     color: #242011;
@@ -34,6 +40,7 @@
 .articles_list-item_img {
     width: 90%;
     height: 90%;
+    object-fit: cover;
 }
 
 .articles_list-item_name {
