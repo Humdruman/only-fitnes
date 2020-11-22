@@ -122,6 +122,21 @@ a[href^="mailto"]{
 .site_logo {
     align-items: center;
 }
+
+@media all and (max-width: 1230px) {
+    .site_logo {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .site_logo {
+        width: 100%;
+    }
+}
+
+
 .site_logo-title {
     width: 110px;
     margin-right: auto;
@@ -138,16 +153,12 @@ a[href^="mailto"]{
     margin-left: 1px;
     margin-right: 9px;
     margin-bottom: 1px;
-    background-image: url(./images/header/online.png);
+    border-radius: 40px;
+    background-color: #f8add4;
     background-size: cover;
 }
 
-@media all and (max-width: 1230px) {
-    .site_logo {
-        align-items: center;
-        justify-content: space-between;
-    }
-}
+
 
 
 .feedback {

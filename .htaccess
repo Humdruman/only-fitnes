@@ -3,6 +3,7 @@ ErrorDocument 404 /404.php
 
 <IfModule mod_php7.c>
   php_flag session.use_trans_sid off
+  php_flag mbstring.func_overload 0
 </IfModule>
 
 
@@ -13,6 +14,7 @@ ErrorDocument 404 /404.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-l
     RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^only-fitnes.ru [NC]
     RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
     RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
     RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]

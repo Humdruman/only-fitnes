@@ -20,6 +20,7 @@ Vue::includeComponent(['AppModal', 'ModalForm', 'FeedbackMessage']);
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title><?php $APPLICATION->ShowTitle() ?></title>
     <?php $asset->addCss(SITE_TEMPLATE_PATH . '/styles.css'); ?>
+    <?php $asset->addCss(SITE_TEMPLATE_PATH . '/css/slick.css')?>
     <?php $asset->addJs(SITE_TEMPLATE_PATH . '/js/slider.js') ?>
     <?php $asset->addJs(SITE_TEMPLATE_PATH . '/js/vuex.js') ?>
     <?php $asset->addJs(SITE_TEMPLATE_PATH . '/js/script.js') ?>
@@ -29,9 +30,24 @@ Vue::includeComponent(['AppModal', 'ModalForm', 'FeedbackMessage']);
     <?php $asset->addJs('local/components/dpch/reviewsPhotoSlider/app/app.js'); ?>
     <?php $asset->addJs('local/components/dpch/reviewsReviewSlider/app/app.js'); ?>
     <?php $asset->addJs('local/components/dpch/workoutSlider/app/app.js'); ?>
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <?php $APPLICATION->ShowHead() ?>
     <?php $APPLICATION->ShowPanel() ?>
+    <script src="//code-ya.jivosite.com/widget/DCExjOZ0yq" async></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(69289246, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/69289246" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body data-theme="#BODY_THEME#">
 <div id="app-vue">

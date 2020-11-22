@@ -12,7 +12,7 @@ $count = 1;
         <div class="interactive_slider-bg_color"></div>
         <img class="interactive_slider-bg_girl" src="<?= "$templateFolder/images/girl_bg.png" ?>" alt="">
         <img class="interactive_slider-bg_girl_small" src="<?= "$templateFolder/images/girl_bg_small.png" ?>" alt="">
-        <img class="interactive_slider-bg_img" src="<?= "$templateFolder/images/bg.png" ?>" alt="">
+        <img class="interactive_slider-bg_img" src="<?= "$templateFolder/images/bg.jpg" ?>" alt="">
     </div>
     <div class="interactive_slider-container">
         <?php for ($i = 0; $count > $i; $i++) { ?>
