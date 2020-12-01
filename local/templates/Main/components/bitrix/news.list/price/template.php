@@ -55,7 +55,9 @@
                                 <?= $prop['OLD_PRICE']['VALUE'] ?>Р
                             </div>
                         </div>
-                        <a href="" class="pricing-card-pay">оплатить обучение</a>
+                        <a class="pricing-card-pay" @click.prevent="$store.dispatch('pay', <?=$item['ID']?>)">
+                            оплатить обучение
+                        </a href="">
                     </div>
                 </div>
             <?php } ?>

@@ -53,6 +53,23 @@ window.buex = BX.Vuex.store({
                 commit('setFeedbackMsg', msg);
                 state.feedbackForm.isSubmitted = true
             }
+        },
+        pay({commit}, productId) {
+            const req = BX.ajax.runComponentAction(
+                'humdruman:pay.ajax',
+                'pay',
+                {
+                    mode: 'class',
+                    data: {
+                        productId: productId
+                    }
+                }
+            )
+            req.then( (res) => {
+                if(res.data.url) {
+                    window.location = res.data.url;
+                }
+            })
         }
     }
 });
